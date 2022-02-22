@@ -1,0 +1,107 @@
+body{
+    width: auto;
+    height: auto;
+    align-content: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 30px;
+    background-color: white;
+}
+
+
+.TimeDate{
+    background-color: antiquewhite;
+    margin: 10%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    padding: 5%;
+    text-align: center;
+    color: black;
+}
+
+#date{
+    text-align: center;
+    font-size: 3vw;
+}
+
+#time{
+    text-align: center;
+    font-size: 10vw;
+    font-weight: bold;
+}
+
+#buttons{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#gmail{
+    width: 104px;
+    height: 104px;
+    border-radius: 25px;
+    background-image: url("gmail.png");
+    background-size: 100%;
+}
+
+#drive{
+    width: 104px;
+    height: 104px;
+    border-radius: 25px;
+    background-image: url("drive.png");
+    background-size: 100%;
+
+}
+
+#github{
+    width: 104px;
+    height: 104px;
+    border-radius: 25px;
+    background-image: url("github.png");
+    background-size: 100%;
+}
+
+#facebook{
+    width: 104px;
+    height: 104px;
+    border-radius: 25px;
+    background-image: url("fb.png");
+    background-size: 100%;
+}
+
+#youtube{
+    width: 104px;
+    height: 104px;
+    border-radius: 25px;
+    background-image: url("youtube.png");
+    background-size: 100%;
+}
+
+#colorsChanger{
+    display: flex;
+}
+
+#Colors{
+    flex-basis: 60px;
+    margin: 0px;
+    text-align: center;
+}
+
+p{
+    margin: 0px;
+    font-size: small;
+}
+
+#colorButton{
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    height: 50px;
+    width: 70px;
+    border: none;
+    background-color: grey;
+}
+
+#name{
+    margin: auto;
+    
+}

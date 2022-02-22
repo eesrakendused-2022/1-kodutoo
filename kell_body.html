@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kell_style.css">
+    <script defer src="kell_work.js"></script>
+    <title>Kell Karolin Kriiska</title>
+</head>
+<body>
+    <div class="TimeDate" id="taust">
+        <div id="date"></div>    
+        <div id="time"></div></div>
+    </div>
+
+    <div id="buttons">
+        <button id="gmail" onclick="window.location.href='https://mail.google.com/';""></button>
+        <button id="drive" onclick="window.location.href='https://https://drive.google.com/';"></button>
+        <button id="github" onclick="window.location.href='https://github.com/';"></button>
+        <button id="facebook" onclick="window.location.href='https://www.facebook.com/';"></button>
+        <button id="youtube" onclick="window.location.href='https://www.youtube.com/';"></button>
+    </div>
+
+    <audio controls autoplay>
+        <source src="music/dan.mp3" type="audio/mpeg">
+      </audio>
+
+
+
+</body>
+<footer>
+<div id="colorsChanger">
+    <div id="Colors">
+    <p>Taust</p>
+       <input type="color" id="colorInputColor1"> 
+    </div>
+    <div id="Colors">
+        <p>Kell taust</p>
+        <input type="color" id="colorInputColor2"> 
+    </div>
+    <div id="Colors">
+        <p>Kuupäev</p>
+        <input type="color" id="colorInputColor3">
+    </div>
+    <div id="Colors">
+        <p>Kell</p>
+        <input type="color" id="colorInputColor4">
+    </div>
+
+    <input type="button" id="colorButton" value="Muuda" onclick="changeColor()">
+
+</div>
+
+    <script>
+        function changeColor(){
+            var x = document.getElementById('colorInputColor1').value;
+            document.body.style.backgroundColor = x;
+            var x = document.getElementById('colorInputColor2').value;
+            document.getElementById('taust').style.backgroundColor = x;
+            var x = document.getElementById('colorInputColor3').value;
+            document.getElementById('time').style.color = x;
+            var x = document.getElementById('colorInputColor4').value;
+            document.getElementById('date').style.color = x;
+
+        }
+    </script>
+
+
+</script>
+
+
+    <p>Karolin Kriiska</p>
+
+    <p><a href="https://github.com/kkriiska/kodutoo1_Karolin_Kriiska" id="link">repo</a></p>
+
+            
+    </footer>
+
+</html>
