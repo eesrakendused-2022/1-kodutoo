@@ -1,28 +1,45 @@
 body{
     margin:0;
 	background-color: SaddleBrown;
+	color: white;
+	font-size: 20px;
+}
+
+a {
+	color: white;
+}
+
+.langButton {
+  background-color: Black;
+  border: none;
+  padding: 0.5em 1em;
+  margin-right: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  //font-size: 5vh;
+  color: white;
 }
 
 #supercontainer{
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 	width: 100vw;
     height: 100vh;
-	//position: relative;
-
+	margin: auto;
 }
 
 #container{
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 	//position: relative;
 	
-	width: 50%;
-    height: 50%;
+	width: 50vw;
+    height: 50vh;
    
 	background-image: url("images/Metsat66_1947.jpg");
 	background-position: center center;
@@ -33,10 +50,10 @@ body{
 	font-size: 10vh;
 	color: white;
 	
-	margin: auto;	
+	//margin: auto;	
 }
 
-#container > .clockContents{
+/* #container > .clockContents{
 /* 	margin:0;
 	padding: 0;
 	color: pink; */
@@ -44,7 +61,13 @@ body{
 
 #time {
     display: flex;
-    justify-content: center;
+	flex-flow: row nowrap;
+    justify-content: flex-start;
+	//margin: auto;	
+}
+
+.clockContents{
+    display: flex;
 }
 
 #fulldate {
@@ -52,15 +75,28 @@ body{
     justify-content: center;
 }
 
-.corners{
-	display: flex;
+#caption {
+    display: flex;
+    justify-content: center;
+	//color: white;
+}
+
+
+
+#controls {
+    display: flex;
+    justify-content: center;	
+}
+
+.cornerButton{
+	//display: flex;
 	position: fixed;
 	z-index: 1;
 	width: 20vh;
     height: 20vh;
-	//border-style: dotted;
-	//border-color: white;
-	//border-radius: 0 0 0 100px;
+	border: none;
+	padding: 0;
+	margin: 0;
 }
 
 #corner1 {
@@ -69,7 +105,6 @@ body{
 	border-radius: 0 0 20vh 0;
 	border-bottom: 5px dotted white;
 	border-right: 5px dotted white;
-	//background-image: linear-gradient(135deg, pink, brown);
 	background-color: DarkOliveGreen;
 }
 
@@ -97,5 +132,14 @@ body{
 	border-radius: 0 20vh 0 0;
 	border-top: 5px dotted white;
 	border-right: 5px dotted white;
-	background-color: Khaki;
+	background-color: Peru;
+}
+
+#impressum {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+	top: 0;
+	z-index: 1;
+	//color: white;
 }
