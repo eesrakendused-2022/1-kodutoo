@@ -1,0 +1,101 @@
+body{
+    margin:0;
+	background-color: SaddleBrown;
+}
+
+#supercontainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+	width: 100vw;
+    height: 100vh;
+	//position: relative;
+
+}
+
+#container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	//position: relative;
+	
+	width: 50%;
+    height: 50%;
+   
+	background-image: url("images/Metsat66_1947.jpg");
+	background-position: center center;
+	
+	border: 5px solid white;
+	border-radius: 100px;
+	
+	font-size: 10vh;
+	color: white;
+	
+	margin: auto;	
+}
+
+#container > .clockContents{
+/* 	margin:0;
+	padding: 0;
+	color: pink; */
+}
+
+#time {
+    display: flex;
+    justify-content: center;
+}
+
+#fulldate {
+    display: flex;
+    justify-content: center;
+}
+
+.corners{
+	display: flex;
+	position: fixed;
+	z-index: 1;
+	width: 20vh;
+    height: 20vh;
+	//border-style: dotted;
+	//border-color: white;
+	//border-radius: 0 0 0 100px;
+}
+
+#corner1 {
+	top: 0;
+	left:0;
+	border-radius: 0 0 20vh 0;
+	border-bottom: 5px dotted white;
+	border-right: 5px dotted white;
+	//background-image: linear-gradient(135deg, pink, brown);
+	background-color: DarkOliveGreen;
+}
+
+#corner2 {
+	top: 0;
+	right:0;
+	border-radius: 0 0 0 20vh;
+	border-bottom: 5px dotted white;
+	border-left: 5px dotted white;
+	background-color: DimGrey;
+}
+
+#corner3 {
+	bottom: 0;
+	right:0;
+	border-radius: 20vh 0 0 0;
+	border-top: 5px dotted white;
+	border-left: 5px dotted white;
+	background-color: Chocolate;
+}
+
+#corner4 {
+	bottom: 0;
+	left:0;
+	border-radius: 0 20vh 0 0;
+	border-top: 5px dotted white;
+	border-right: 5px dotted white;
+	background-color: Khaki;
+}
