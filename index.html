@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clock</title>
+    <link rel="stylesheet" href="clockStyles.css">
+    <link rel="stylesheet" href="toolTips.css">
+    <link rel="stylesheet" href="music_icons.css">
+</head>
+<body onload="moveLegs(), tellTime()">
+    <canvas id="bg"></canvas>
+    <container class="main">
+        <div class="circle" id="clock">
+            <div class="leg1" id="firstLeg"></div>
+            <div class="leg2" id="secondLeg"></div>
+            <div class="leg3" id="thirdLeg"></div>
+            <div class="button" id="btn"></div>
+        </div>
+        <div class="change" id="changeClock"><h1>Change Style</h1>
+            <div class="holder">
+                <span class="styleChange" id="styleChange"></span>
+                <span class="styleChange1" id="styleChange1"></span>
+            </div>
+        </div>
+        <div class="side">
+            <div class="greeting"><h1>Welcome!</h1><hr></div>
+            <div class="time"><p1>The current time is:</p1>
+                <div id="time_here"></div>
+                <hr>
+            </div>
+            <div class="date"><p1>Today is:</p1>
+                <div id="date_here"></div>
+                <hr>
+            </div>
+            <div class="icons">
+                <div class="previous" id="prev"></div>
+                <div class="music_off" id="music_selector"></div>
+                <div class="next_song" id="next"></div>
+                <div class="songName" id="song_name"></div>
+            </div>
+        </div>
+    </container>
+    <script type="text/javascript" src="clockSounds.js" defer></script>
+    <script type="text/javascript" src="clockScript.js" async></script>
+    <script type="text/javascript" src="changeStyle.js" async></script>
+
+    
+</body>
+</html>

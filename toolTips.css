@@ -1,0 +1,53 @@
+.styleChange{
+    position: absolute;
+    visibility: hidden;
+    width: 8vh;
+    aspect-ratio: 1/1;
+    z-index: 1;
+    background-image: url("clocky.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    transition: 300ms;
+    margin-left: -2vw;
+}
+.change:hover .styleChange {
+    transition: 300ms;
+    visibility:visible;
+}
+
+.styleChange1{
+    transition: 300ms;
+    margin-left: 5vw;
+    position: absolute;
+    visibility: hidden;
+    width: 8vh;
+    aspect-ratio: 1/1;
+    z-index: 1;
+    background-image: url("clock.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-color: white;
+    animation: ease-in 300ms;
+}
+.holder{
+    visibility: hidden;
+    margin-left: -0.6vw;
+    transition: 300ms;
+    background-color: black;
+    width:20vw;
+    height: 8.5vh;
+    border-radius: 10px;
+}
+.change:hover .styleChange1{
+    animation: ease-out 300ms;
+    visibility:visible;
+}
+
+.change:hover .holder{
+    animation: ease-out 300ms;
+    visibility:visible;
+}
