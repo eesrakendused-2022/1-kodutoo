@@ -31,10 +31,10 @@ nextSong.onclick = function(){
 
     } else {
         songCounter++;
-        songName.innerHTML = songNames[songCounter];
         pauseSongs();
         songs[songCounter].play();
         onOff.className = "music_on";
+        songName.innerHTML = songNames[songCounter];
     }
 };
 prevSong.onclick = function(){
