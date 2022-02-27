@@ -5,7 +5,7 @@ function moveLegs(){
     let m = today.getMinutes();
     let h = today.getHours();
     let secDeg = 6 * s;
-    let minDeg = 6 * m;
+    let minDeg = (6 * m) + (s*0.1);
     let hrDeg = function(){
         if(h<=12){
             return (h-12)*30;
