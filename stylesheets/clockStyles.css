@@ -37,6 +37,7 @@ body, html {
     border-radius: 50%;
     border: 10px solid black;
     box-shadow: 5px 5px 40px rgb(112, 59, 96);
+    -webkit-transition: ease-in 500ms;
     transition: ease-in 500ms;
 
 }
