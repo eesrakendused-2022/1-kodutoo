@@ -8,7 +8,7 @@ var catStyle = document.getElementById("styleChange5");
 var logo = document.querySelector("#logo");
 
 logo.onclick = function(){
-    location.href("https://github.com/kristoplv/1-kodutoo");
+    console.log("helloo");
 }
 
 blueStyle.onclick = function(){
