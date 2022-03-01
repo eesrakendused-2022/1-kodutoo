@@ -4,14 +4,17 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+	</style>
 	<link rel="stylesheet" href="style.css">
 	<script src="clock.js" defer></script>
 	<title>Kell</title>
 </head>
 <body>
-	<div id="controls">
-		<button id="bigger">Suuremaks</button>
-		<button id="smaller">Väiksemaks</button>
+	<div id="buttons">
+		<button id="et">Eesti keeles</button>
+		<button id="en">In English</button>
 	</div>
 	<div id="container">
 		<div id="time">
@@ -19,10 +22,12 @@
 			<div id="minutes">Minutid</div>
 			<div id="seconds">Sekundid</div>
 		</div>
-		<div id="date">Kuupäev</div>
-		<div id="month">Kuunimi</div>
-		<div id="year">Aasta</div>
-		<div id="day">Nädalapäev</div>
+		<div id="fullDate">
+			<div id="day">Nädalapäev</div>
+			<div id="date">Kuupäev</div>
+			<div id="month">Kuunimi</div>
+			<div id="year">Aasta</div>
+		</div>
 	</div>
 </body>
 </html>
