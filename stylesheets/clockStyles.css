@@ -116,13 +116,14 @@ p1{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 .logo{
+    transition: 300ms;
     opacity: 0.4;
     position: fixed;
     margin-top: 4vh;
     margin-left: 2vw;
     top: 0;
     left: 0;
-    z-index: 20;
+    z-index: 1;
     width: 8vw;
     aspect-ratio: 1/1;
     transform: rotate(45deg);
@@ -131,4 +132,11 @@ p1{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
+}
+.logo:hover {
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    border:rgba(255, 255, 255, 0.7);
+    box-shadow: 3px 3px 10px solid rgb(134, 199, 219);
 }

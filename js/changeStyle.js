@@ -5,6 +5,11 @@ var redStyle = document.getElementById("styleChange2");
 var peppaStyle = document.getElementById("styleChange3");
 var woofStyle = document.getElementById("styleChange4");
 var catStyle = document.getElementById("styleChange5");
+var logo = document.querySelector("#logo");
+
+logo.onclick = function(){
+    location.href("https://github.com/kristoplv/1-kodutoo");
+}
 
 blueStyle.onclick = function(){
     clock.style.backgroundImage = 'url("/pictures/clocky.jpg")';
