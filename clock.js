@@ -94,6 +94,7 @@ function english() {
     document.getElementById("bigger").innerHTML = "Bigger";
     document.getElementById("smaller").innerHTML = "Smaller";
     document.getElementById("break").innerHTML = "Wanna break dance?";
+    document.getElementById("random").innerHTML = "Push a random button!";
     document.getElementById('hover').addEventListener("mouseover", function(){
         d = new Date();
         day = d.getDay();
@@ -125,6 +126,7 @@ function estonian(){
     document.getElementById("bigger").innerHTML = "Suuremaks";
     document.getElementById("smaller").innerHTML = "Väiksemaks";
     document.getElementById("break").innerHTML = "Breigime?";
+    document.getElementById("random").innerHTML = "Vajuta suvalist nuppu!";
     document.getElementById('hover').addEventListener("mouseover", function(){
         d = new Date();
         day = d.getDay();
