@@ -20,33 +20,26 @@ let daysEN = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday",
 let monthsEN = ["january", "february", "march", "april", "may", "june", "july", 
 "august", "september", "october", "november", "december"];
 
-let hoursContainer = document.getElementById('hours');
-let minutesContainer = document.getElementById('minutes');
-let secondsContainer = document.getElementById('seconds');
-let dayContainer = document.getElementById('day');
-let dateContainer = document.getElementById('date');
-let monthContainer = document.getElementById('month');
+let hoursContainer = document.querySelector('#hours');
+let minutesContainer = document.querySelector('#minutes');
+let secondsContainer = document.querySelector('#seconds');
+let dayContainer = document.querySelector('#day');
+let dateContainer = document.querySelector('#date');
+let monthContainer = document.querySelector('#month');
+let yearContainer = document.querySelector('#year');
 
 dayContainer.innerHTML = days[day];
 dateContainer.innerHTML = date;
 monthContainer.innerHTML = months[month];
-document.getElementById('year').innerHTML = year;
+yearContainer.innerHTML = year;
 
 updateClock();
 window.setInterval(updateClock, 1000);
 
-// change between languages
-document.getElementById('et').addEventListener("click", function() {
-    dayContainer.innerHTML = days[day];
-    monthContainer.innerHTML = months[month];
-});
-document.getElementById('en').addEventListener("click", function() {
-    dayContainer.innerHTML = daysEN[day];
-    monthContainer.innerHTML = monthsEN[month];
-});
+let timeContainer = document.querySelector('#time');
 
 // change between 24-hour and 12-hour format
-document.getElementById('time').addEventListener("click", function() {
+timeContainer.addEventListener('click', function() {
     // invert the value of is24Hour
     is24Hour = !is24Hour;
 });
@@ -65,13 +58,10 @@ function updateClock() {
     */
     if (!is24Hour) {
         amPm = " am";
-
         if (hours >= 12) {
             amPm = " pm";
         }
-
         hours = hours % 12;
-
         if (hours == 0) {
             hours = 12;
         }
@@ -97,3 +87,49 @@ function updateClock() {
         secondsContainer.innerHTML = ":" + seconds;
     }
 }
+
+
+
+// change between languages
+let githubLink = document.querySelector('#githubLink');
+let etLangBtn = document.querySelector('#etLang');
+let enLangBtn = document.querySelector('#enLang');
+let colorInput = document.querySelector('#colorInput');
+let changeColorBtn = document.querySelector('#changeColor');
+let resetColorBtn = document.querySelector('#resetColor');
+
+etLangBtn.addEventListener('click', function() {
+    dayContainer.innerHTML = days[day];
+    monthContainer.innerHTML = months[month];
+    colorInput.placeholder = "värv";
+    changeColorBtn.innerHTML = "Muuda";
+    resetColorBtn.innerHTML = "Taasta";
+});
+enLangBtn.addEventListener('click', function() {
+    dayContainer.innerHTML = daysEN[day];
+    monthContainer.innerHTML = monthsEN[month];
+    colorInput.placeholder = "color";
+    changeColorBtn.innerHTML = "Change";
+    resetColorBtn.innerHTML = "Reset";
+});
+
+
+
+// change and reset colors
+changeColorBtn.addEventListener('click', function() {
+    document.body.style.color = 
+    githubLink.style.color = 
+    etLangBtn.style.color = 
+    enLangBtn.style.color = 
+    changeColorBtn.style.color = 
+    resetColorBtn.style.color = colorInput.value;
+    colorInput.value = "";
+});
+resetColorBtn.addEventListener("click", function() {
+    document.body.style.color = 
+    githubLink.style.color = 
+    etLangBtn.style.color = 
+    enLangBtn.style.color = 
+    changeColorBtn.style.color = 
+    resetColorBtn.style.color = "#ef6c00";
+});
