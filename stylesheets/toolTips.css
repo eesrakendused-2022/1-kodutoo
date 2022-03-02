@@ -1,6 +1,5 @@
 .styleChange{
     position: relative;
-    visibility: hidden;
     width: 8vh;
     aspect-ratio: 1/1;
     background-image: url("/pictures/clocky.jpg");
@@ -8,17 +7,10 @@
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 50%;
-    transition: 300ms;
-}
-.change:hover .styleChange {
-    transition: 300ms;
-    visibility:visible;
 }
 
 .styleChange1{
     position: relative;
-    transition: 300ms;
-    visibility: hidden;
     width: 8vh;
     aspect-ratio: 1/1;
     background-image: url("/pictures/clock.png");
@@ -30,8 +22,6 @@
 }
 .styleChange2{
     position: relative;
-    transition: 300ms;
-    visibility: hidden;
     width: 8vh;
     aspect-ratio: 1/1;
     background-image: url("/pictures/redC.png");
@@ -44,8 +34,6 @@
 }
 .styleChange3{
     position: relative;
-    transition: 300ms;
-    visibility: hidden;
     width: 8vh;
     aspect-ratio: 1/1;
     background-image: url("/pictures/peppaC.png");
@@ -58,8 +46,6 @@
 }
 .styleChange4{
     position: relative;
-    transition: 300ms;
-    visibility: hidden;
     width: 8vh;
     aspect-ratio: 1/1;
     background-image: url("/pictures/doggoC.png");
@@ -72,8 +58,6 @@
 }
 .styleChange5{
     position: relative;
-    transition: 300ms;
-    visibility: hidden;
     width: 8vh;
     aspect-ratio: 1/1;
     background-image: url("/pictures/catC.png");
@@ -85,42 +69,25 @@
     animation: ease-in 300ms;
 }
 .holder{
+    transition: 300ms;
+    -webkit-transition: 300ms;
     display: flex;
     position: absolute;
     justify-content: center;
-    visibility: hidden;
-    transition: 300ms;
+    opacity: 0;
     background-color: black;
     width:20vw;
     aspect-ratio: 5/0;
     border-radius: 30px;
     border: 10px solid rgba(0, 0, 0, 0.5);
 }
-.change:hover .styleChange1{
-    animation: ease-out 300ms;
-    visibility:visible;
-}
-.change:hover .styleChange2{
-    animation: ease-out 300ms;
-    visibility:visible;
-}
-.change:hover .styleChange3{
-    animation: ease-out 300ms;
-    visibility:visible;
-}
-.change:hover .styleChange4{
-    animation: ease-out 300ms;
-    visibility:visible;
-}
-.change:hover .styleChange5{
-    animation: ease-out 300ms;
-    visibility:visible;
-}
+
 .styleChange, .styleChange1, .styleChange2, .styleChange3, .styleChange4, .styleChange5 {
     margin-left: 3%;
 }
 
 .change:hover .holder{
-    animation: ease-out 300ms;
-    visibility:visible;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    opacity: 1;
 }

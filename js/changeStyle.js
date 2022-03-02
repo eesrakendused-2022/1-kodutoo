@@ -7,9 +7,11 @@ var woofStyle = document.getElementById("styleChange4");
 var catStyle = document.getElementById("styleChange5");
 var logo = document.querySelector("#logo");
 
-logo.onclick = function(){
-    console.log("helloo");
+function sendToGit(){
+    window.open("https://github.com/kristoplv/1-kodutoo");
 }
+
+logo.addEventListener("click", sendToGit);
 
 blueStyle.onclick = function(){
     clock.style.backgroundImage = 'url("/pictures/clocky.jpg")';

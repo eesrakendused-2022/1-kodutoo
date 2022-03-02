@@ -137,6 +137,7 @@ p1{
 .logo:hover {
     transition: 300ms;
     -webkit-transition: 300ms;
+    opacity: 0.85;
     border:rgba(255, 255, 255, 0.7);
-    box-shadow: 3px 3px 10px solid rgb(134, 199, 219);
+    box-shadow: 5px 5px 20px rgb(134, 199, 219);
 }
