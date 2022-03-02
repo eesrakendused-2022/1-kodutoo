@@ -14,10 +14,10 @@ Veebirakenduse funktsioonid:
 
 * Kella 21st kuni kella 08ni on "nighttime" background, ülejäänud ajal "daytime".
 * Seinakell. Kõik seierid liiguvad vastavalt ajale, seierid loodud kasutades CSS-is "linear-gradient"-i. Seinakellal saab muuta tausta valikus "Change Style"
-* Side panel. Kuvatakse kellaaega kui isik seiereid lugeda ei oska vms :D. Samuti kuvatakse ka kuupeäva.
+* Side panel. Kuvatakse kellaaega kui isik seiereid lugeda ei oska vms :D. Samuti kuvatakse ka kuupäeva.
 * Muusika pleier. Edasi-tagasi liikumise nupud, keskmine nupp paneb pausile laulu. Kuvatakse ka laulu autorit ja laulu nime.
 * Personal logo. Hover'i et see highlight'da ja kuvada veebilehe autori nimi. Logole klikkimine viib GitHubi reposse.
-* Leht loodi kasutades Vite-t, aka forki/pulli see, ava VSC-s ja kirjuta terminali "npm run dev" ja saad vaadata kuidas asi toimib.
+* Leht loodi kasutades Node-i ja Vite-t, aka forki/pulli see, ava VSC-s ja kirjuta terminali "npm run dev" ja saad vaadata kuidas asi toimib.
 * Maybe more, who knows...
 
 
