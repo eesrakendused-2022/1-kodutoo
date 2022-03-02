@@ -5,6 +5,8 @@ body{
 	font-size: 20px;
 }
 
+html, body {margin: 0; height: 100%; overflow: hidden}
+
 a {
 	color: white;
 }
@@ -17,18 +19,15 @@ a {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  //font-size: 5vh;
   color: white;
 }
 
-#supercontainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-	width: 100vw;
-    height: 100vh;
-	margin: auto;
+#wrapper{
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%, -50%);
+	
 }
 
 #container{
@@ -36,34 +35,25 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-	//position: relative;
 	
 	width: 50vw;
     height: 50vh;
    
 	background-image: url("images/Metsat66_1947.jpg");
 	background-position: center center;
+	background-size: cover;
 	
 	border: 5px solid white;
-	border-radius: 100px;
+	border-radius: 20vh;
 	
 	font-size: 10vh;
 	color: white;
-	
-	//margin: auto;	
-}
-
-/* #container > .clockContents{
-/* 	margin:0;
-	padding: 0;
-	color: pink; */
 }
 
 #time {
     display: flex;
 	flex-flow: row nowrap;
     justify-content: flex-start;
-	//margin: auto;	
 }
 
 .clockContents{
@@ -78,10 +68,7 @@ a {
 #caption {
     display: flex;
     justify-content: center;
-	//color: white;
 }
-
-
 
 #controls {
     display: flex;
@@ -89,7 +76,6 @@ a {
 }
 
 .cornerButton{
-	//display: flex;
 	position: fixed;
 	z-index: 1;
 	width: 20vh;
@@ -141,5 +127,4 @@ a {
     transform: translate(-50%, 0);
 	top: 0;
 	z-index: 1;
-	//color: white;
 }

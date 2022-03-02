@@ -18,7 +18,7 @@ let daysENG = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
 
 let workURLs =["images/Metsat66_1947.jpg", "images/Yrgkogukondlik_1949.jpg", "images/Suitsutare_1948.jpg", "images/M6isnikud_1947.jpg", "images/P6levkivit66stus_1947.jpg"];
 let workCaptionsEST = ["Metsatöö. 1947", "Põllumajandus ürgkogukondlikul ajastul. 1949", "Õhtu suitsutares. 1948", "Mõisnikud tõllas. 1947", "Eesti põlevkivitööstuse areng. 1947"];
-let workCaptionsENG = ["Forestry. 1947", "Agriculture in the prehistoric era. 1949", "Evening in the smokehouse. 1948", "Landlords in the chariot. 1947", "Development of the Estonian oil shale industry. 1947"];
+let workCaptionsENG = ["Forest Work. 1947", "Agriculture in the Prehistoric Era. 1949", "Evening in the Smoke Cottage. 1948", "Landlords in the Chariot. 1947", "Development of the Estonian Oil Shale Industry. 1947"];
 let work=0; 
 
 let secondsContainer = document.getElementById('seconds');
@@ -54,6 +54,7 @@ document.getElementById('langENG').addEventListener("click", function(){
 		monthContainer.innerHTML = monthsENG[month]+"&nbsp;";
 		dayContainer.innerHTML = daysENG[day];
 		caption.innerHTML = workCaptionsENG[work];
+		document.title = "Clock";
 	}
 })
 document.getElementById('langEST').addEventListener("click", function(){
@@ -64,6 +65,7 @@ document.getElementById('langEST').addEventListener("click", function(){
 		monthContainer.innerHTML = monthsEST[month]+"&nbsp;";
 		dayContainer.innerHTML = daysEST[day];
 		caption.innerHTML = workCaptionsEST[work];
+		document.title = "Kell";
 	}
 })
 
@@ -137,8 +139,6 @@ container.addEventListener("click", function(){
 	}	
 })
 
-
-
 function updateClock(){
     d = new Date();
 	hours = d.getHours();
@@ -177,3 +177,30 @@ function updateClock(){
 		secondsContainer.innerHTML = ":"+seconds+ampm;
 	}
 }
+
+/* source: https://www.fwait.com/how-to-move-an-object-with-arrow-keys-in-javascript/ */
+
+let wrapper = document.querySelector('#wrapper');
+let moveBy = 2;
+window.addEventListener('load', () => {
+    wrapper.style.position = 'absolute';
+    wrapper.style.left = 50+'%';
+    wrapper.style.top = 50+'%';
+});
+
+window.addEventListener('keyup', (e) => {
+    switch (e.key) {
+        case 'ArrowLeft':
+            wrapper.style.left = parseInt(wrapper.style.left) - moveBy + '%';
+            break;
+        case 'ArrowRight':
+            wrapper.style.left = parseInt(wrapper.style.left) + moveBy + '%';
+            break;
+        case 'ArrowUp':
+            wrapper.style.top = parseInt(wrapper.style.top) - moveBy + '%';
+            break;
+        case 'ArrowDown':
+            wrapper.style.top = parseInt(wrapper.style.top) + moveBy + '%';
+            break;
+    }
+});
