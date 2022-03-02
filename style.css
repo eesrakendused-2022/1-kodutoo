@@ -1,21 +1,47 @@
-#buttons {
-	justify-content: end;
-	padding-bottom: 3%;
-	padding-right: 2%;
+#buttons, #credits {
 	padding-top: 2%;
+	width: 50%;
 }
 
-#buttons, #fullDate {
+#buttons, #colorChanger {
+	justify-content: end;
+	padding-right: 2%;
+}
+
+#buttons, #colorChanger, #credits, #fullDate {
 	flex-direction: row;
 }
 
-#buttons, #fullDate, #time {
+#buttons, #colorChanger, #credits, #fullDate, #time, #topRow {
 	display: flex;
+}
+
+#changeColor, #colorInput, #etLang {
+	margin-right: 1%;
+}
+
+#colorChanger {
+	padding-bottom: 2%;
+	padding-top: 1%;
 }
 
 #container {
 	font-size: 2em;
 	height: 70vh;
+}
+
+#credits {
+	align-items: center;
+	justify-content: start;
+	padding-left: 2%;
+}
+
+#credits, button {
+	text-transform: lowercase;
+}
+
+#credits, button, input {
+	font-size: 0.6em;
 }
 
 #date, #month {
@@ -24,10 +50,6 @@
 
 #day {
 	padding-right: 3%;
-}
-
-#et {
-	margin-right: 1%;
 }
 
 #fullDate, #time {
@@ -40,19 +62,37 @@
 	width: fit-content;
 }
 
+a {
+	text-decoration: none;
+}
+
+a, body, button {
+	color: #ef6c00;
+}
+
 body {
 	margin: 0;
 }
 
-body, button {
+body, button, input {
 	background-color: #1b1b1b;
-	color: #ef6c00;
 	font-family: 'VT323', monospace;
 }
 
 button {
 	border: none;
 	cursor: pointer;
-	font-size: 1.2em;
-	text-transform: lowercase;
+}
+
+input {
+	border: 1px solid white;
+	color: #ffffff;
+}
+
+input:focus {
+	outline: none;
+}
+
+p {
+	margin: 0 4% 0 0;
 }
