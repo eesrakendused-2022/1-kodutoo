@@ -1,6 +1,28 @@
 # 1-kodutoo
-
 ## Tähtaeg 06.03.2022 23:59
+[Autor] : Kristo Põlluvee
+[Eriala] : Informaatika BA, TA suund
+[Projekti algus] : 23.02.2022
+[Projekti lõpp] : TBD
+
+
+# Intro
+
+Lõin veebirakenduse, kus kuvatakse kasutajale seinakella, kõrval ka nn digitaalne kell.
+
+Veebirakenduse funktsioonid:
+
+* Kella 21st kuni kella 08ni on "nighttime" background, ülejäänud ajal "daytime".
+* Seinakell. Kõik seierid liiguvad vastavalt ajale, seierid loodud kasutades CSS-is "linear-gradient"-i. Seinakellal saab muuta tausta valikus "Change Style"
+* Side panel. Kuvatakse kellaaega kui isik seiereid lugeda ei oska vms :D. Samuti kuvatakse ka kuupeäva.
+* Muusika pleier. Edasi-tagasi liikumise nupud, keskmine nupp paneb pausile laulu. Kuvatakse ka laulu autorit ja laulu nime.
+* Personal logo. Hover'i et see highlight'da ja kuvada veebilehe autori nimi. Logole klikkimine viib GitHubi reposse.
+* Leht loodi kasutades Vite-t, aka forki/pulli see, ava VSC-s ja kirjuta terminali "npm run dev" ja saad vaadata kuidas asi toimib.
+* Maybe more, who knows...
+
+
+
+## Ülesanne:
 
 Kujunda elektroonilise kella näide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või nt võimalda kella suurust kasutajal muuta.
 
@@ -10,8 +32,8 @@ Kujunda elektroonilise kella näide vastavalt maitsele või kindlale teemale, ma
 1. Vastavalt kasutaja tegevusele on võimalik muuta **kolme** lauakella atribuuti muuta. - DONE
 1. Kasutatud on eventListener'e ja funktsioone. - DONE
 1. Kell on originaalne ning kasutajaliides on maitsekalt kujundatud kasutades CSS-i - peab olema ise kirjutatud. - DONE
-1. Autori ees- ja perenimi on lehel välja toodud
-1. Lehel on viide rakenduse repositooriumile
+1. Autori ees- ja perenimi on lehel välja toodud - DONE(veidi peidus[hover the logo])
+1. Lehel on viide rakenduse repositooriumile - DONE(veidi peidus[click the logo])
 1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus - DONE
 
 ## Mõned ideed võimalikeks täiendusteks (lihtsalt, et mõte hakkaks jooksma)
@@ -29,8 +51,3 @@ Kujunda elektroonilise kella näide vastavalt maitsele või kindlale teemale, ma
 * Elemendid muudavad asukohta teatud kasutaja käitumise peale.
 * Saab vahetada keelt, kellaformaati vms. - DONE
 
-## Abimaterjal
-
-* Sündmuste loetelu [HTML DOM Events](http://www.w3schools.com/jsref/dom_obj_event.asp)
-* Ajal põhinevad sündmused [JavaScript Timing Events](http://www.w3schools.com/js/js_timing.asp)
-* CSSi muutmine [HTML DOM Style Object](http://www.w3schools.com/jsref/dom_obj_style.asp)
