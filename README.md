@@ -1,9 +1,9 @@
 # 1-kodutoo
 ## Tähtaeg 06.03.2022 23:59
-[Autor] : Kristo Põlluvee
-[Eriala] : Informaatika BA, TA suund
-[Projekti algus] : 23.02.2022
-[Projekti lõpp] : TBD
+*Autor : Kristo Põlluvee
+*Eriala : Informaatika BA, TA suund
+*Projekti algus : 23.02.2022
+*Projekti lõpp : TBD
 
 
 # Intro
