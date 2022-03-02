@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kell</title>
+    <meta name="description" content="Roughly 155 characters">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/086422c045.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="clock" style="font-size: 50px;">
+            <div id="date">
+                <div id="day">Kuupäev</div>
+                <div id="month">Kuu</div>
+                <div id="year">Aasta</div>
+            </div>
+            <div id="time">
+                <div id="hours">Tunnid</div>
+                <div id="minutes">Minutid</div>
+                <div id="seconds">Sekundid</div>
+            </div>
+            <div id="weekday">Nädalapäev</div>
+        </div>
+        <p id="copyright">&copy Merle Paula Videvik</p>
+    </div>
+    <div id="controls">
+        <!-- Background Toggle -->
+        <h5>Muuda kella tausta</h5>
+        <div id="background-toggles" title="Muuda tausta">
+            <button id="background-1" class="background-1"></button>
+            <button id="background-2" class="background-2"></button>
+            <button id="background-3" class="background-3"></button>
+<!--             <button class="background-2" onclick="changeBackground('2')"></button>
+            <button class="background-3" onclick="changeBackground('3')"></button> -->
+        </div>
+        <div id="changeSize">
+            <h5>Muuda teksti suurust</h5>
+            <button id="bigger" title="Muuda kirja suuremaks"><i class="fa-solid fa-t"
+                    style="font-size: 50px"></i></button>
+            <button id="smaller" title="Muuda kirja väiksemaks"><i class="fa-solid fa-t"
+                    style="font-size: 30px"></i></button>
+        </div>
+    </div>
+</body>
+
+</html>
