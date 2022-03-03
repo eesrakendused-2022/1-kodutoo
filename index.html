@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="stylesheets/toolTips.css">
     <link rel="stylesheet" href="stylesheets/music_icons.css">
 </head>
-<body onload="moveLegs(), tellTime()">
+<body onload="moveLegs(), tellTime(), echoColor()">
     <canvas id="bg">
     </canvas>
     <container class="main">
@@ -51,10 +51,13 @@
             </span>
         </div>
         <div class="fullscreen" id="fullScreen"></div>
+        <div class="clr" id="clr">
+            <input type="color" id="colorChange" value="">
+        </div>
     </container>
     <script type="text/javascript" src="js/clockSounds.js" defer></script>
     <script type="text/javascript" src="js/clockScript.js" async></script>
-    <script type="text/javascript" src="js/changeStyle.js" async></script>
+    <script type="text/javascript" src="js/changeStyle.js" defer></script>
 
     
 </body>

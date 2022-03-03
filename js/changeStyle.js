@@ -8,6 +8,10 @@ var catStyle = document.getElementById("styleChange5");
 var logo = document.querySelector("#logo");
 var fullScreen = document.querySelector("#fullScreen");
 var counter = 0;
+var color = document.querySelector("#colorChange");
+function echoColor(){
+    console.log(color.value);
+}
 
 function sendToGit(){
     window.open("https://github.com/kristoplv/1-kodutoo");
