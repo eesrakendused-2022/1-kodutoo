@@ -1,0 +1,77 @@
+body{
+    margin:0;
+    background-color: aliceblue;
+}
+
+a{
+    font-size: 20px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(127, 193, 255);
+}
+
+.buttons1 {
+    background-color: rgb(121, 109, 230);
+    color: rgb(194, 226, 255);
+    font-weight: bold;
+    border: 1px solid black;
+    margin-right: 5px;
+}
+
+.buttons1:hover {
+    background-color: rgb(172, 164, 250);
+    color: rgb(217, 235, 252);
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    justify-content: space-around;
+    background-image: url("images/sky");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#time {
+    position: absolute;
+    z-index: 9;
+}
+
+#clockControls {
+    padding-top: 20px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(127, 193, 255);
+}
+
+#clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    font-weight: bold;
+    background-color: rgba(240, 248, 255, 0.486);
+    color: rgb(10, 43, 63);
+}
+
+#dateTime {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    background-color: rgba(240, 248, 255, 0.329);
+}
+
+#date, #month, #year, #day {
+    padding: 20px;
+    font-size: 100px;
+}
