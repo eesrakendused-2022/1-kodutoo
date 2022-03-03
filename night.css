@@ -1,0 +1,84 @@
+body{
+    margin:0;
+    background-color: rgb(20, 14, 14);
+}
+h1, a {
+    color: rgb(36, 12, 59);
+    background-color: rgba(81, 121, 230, 0.753);
+}
+
+a{
+    font-size: 20px;
+}
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(23, 82, 138);
+}
+
+.buttons1 {
+    background-color: rgba(42, 31, 143, 0.733);
+    color: rgb(194, 226, 255);
+    font-weight: bold;
+    border: 1px solid black;
+    margin-right: 5px;
+}
+
+.buttons1:hover {
+    background-color: rgb(172, 164, 250);
+    color: rgb(217, 235, 252);
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    justify-content: space-around;
+    background-image: url("images/moonlight");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#time {
+    position: absolute;
+    z-index: 9;
+}
+
+#clockControls {
+    padding-top: 20px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(23, 82, 138);
+}
+
+#time {
+    border: 1px solid rgb(25, 82, 138);
+}
+
+#clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    font-weight: bold;
+    background-color: rgba(104, 164, 216, 0.486);
+    color: rgba(4, 0, 61, 0.747);
+}
+
+#dateTime {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    background-color: rgba(104, 164, 216, 0.507);
+}
+
+#date, #month, #year, #day {
+    padding: 20px;
+    font-size: 100px;
+}
