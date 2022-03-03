@@ -147,10 +147,9 @@ p1{
     width: 15vw;
     aspect-ratio: 1/0;
     transform: rotate(-45deg);
-    margin-top: 17vh;
-    margin-left: 3.5vw;
+    margin-top: 18vh;
+    margin-left: 5vw;
     position: absolute;
-    margin-top: -2;
     opacity: 0;
     color: white;
     font-size: 4vh;

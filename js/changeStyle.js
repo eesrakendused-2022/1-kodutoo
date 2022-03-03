@@ -6,6 +6,8 @@ var peppaStyle = document.getElementById("styleChange3");
 var woofStyle = document.getElementById("styleChange4");
 var catStyle = document.getElementById("styleChange5");
 var logo = document.querySelector("#logo");
+var fullScreen = document.querySelector("#fullScreen");
+var counter = 0;
 
 function sendToGit(){
     window.open("https://github.com/kristoplv/1-kodutoo");
@@ -13,22 +15,33 @@ function sendToGit(){
 
 logo.addEventListener("click", sendToGit);
 
-blueStyle.onclick = function(){
+blueStyle.addEventListener("click", function(){
     clock.style.backgroundImage = 'url("/pictures/clocky.jpg")';
-}
+});
 
-normStyle.onclick = function(){
+normStyle.addEventListener("click", function(){
     clock.style.backgroundImage = 'url("/pictures/clock.png")';
-}
-redStyle.onclick = function(){
+});
+redStyle.addEventListener("click", function(){
     clock.style.backgroundImage = 'url("/pictures/redC.png")';
-}
-peppaStyle.onclick = function(){
+});
+peppaStyle.addEventListener("click", function(){
     clock.style.backgroundImage = 'url("/pictures/peppaC.png")';
-}
-woofStyle.onclick = function(){
+});
+woofStyle.addEventListener("click", function(){
     clock.style.backgroundImage = 'url("/pictures/doggoC.png")';
-}
-catStyle.onclick = function(){
+});
+catStyle.addEventListener("click", function(){
     clock.style.backgroundImage = 'url("/pictures/catC.png")';
-}
+});
+fullScreen.addEventListener("click", function(){
+    if(counter ==0){
+        document.body.requestFullscreen();
+        fullScreen.style.backgroundImage = 'url("/pictures/fullOff.png")';
+        counter++;
+    } else {
+        document.exitFullscreen();
+        fullScreen.style.backgroundImage = 'url("/pictures/full.png")';
+        counter--;
+    }
+})

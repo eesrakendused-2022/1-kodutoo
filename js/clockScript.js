@@ -31,7 +31,7 @@ function tellTime(){
     let s = today.getSeconds();
     let m = today.getMinutes();
     let h = today.getHours();
-    let month = today.getMonth();
+    let month = today.getMonth() + 1;
     let year = today.getFullYear();
     let day = today.getDate();
     const zone = Intl.DateTimeFormat().resolvedOptions().timeZone;
