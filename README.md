@@ -4,8 +4,8 @@
 
 1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
 
-#Kell
-##Siim Kriibi
+# Kell
+## Siim Kriibi
 
 Kellal on kolm funktsionaalsust.
   1. kella suurust saab nuppu vajutusega muuta suuremaks, väiksemaks ja tagasi tavasuurusele.
