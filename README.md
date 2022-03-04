@@ -22,8 +22,17 @@ Veebirakenduse funktsioonid:
 
 ### Pildid 
 
-Pilt üldisest screenist
+Pilt üldisest screenist:
 ![lahe pilt](/pictures/sc_1.png)
+
+Pilt logost, hoveri korral näidetakse nime, clicki korral avatakse leht GitHub repo-sse:
+![lahe pilt](/pictures/sc_2.png)
+
+Pilt kellastiili muutmisest, hover toob esile:
+![lahe pilt](/pictures/sc_3.png)
+
+Pilt music player'st, nupud saadavad kas eelmisele või järgmisele laulue; keskmine nupp paneb pausile:
+![lahe pilt](/pictures/sc_4.png)
 
 
 ## Ülesanne:
