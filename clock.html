@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kell</title>
+    <link rel="stylesheet" href="clock.css">
+    <script src="clock.js" defer></script>
+</head>
+<body>
+    <!-- nimi puudu ja midagi võiks veel teha? -->
+    <div id="main_content">
+        <u><div id="small_text">
+            All on nupud.
+        </div></u>
+        <div id="big_text">
+            Vajuta midagi.
+        </div>
+    </div>
+    <div id="other_content">
+        <div class="other" name="time_buttons">
+            <button id="time_button">Kellaaeg</button>
+            <button id="date_button">Kuupäev</button>
+            <button id="day_button" >Nädalapäev</button>
+        </div>
+        <div class="other" name="other_buttons">
+            <label for="text_color">Teksti värv</label>
+            <input type="color" id="text_color" value="#d3d3d3">
+            <label for="bg_color">Taustavärv</label>
+            <input type="color" id="bg_color" value="#2c2c2c">
+            <label for="text_size">Teksti suurus</label>
+            <input type="range" id="text_size" value="2" min="1" max="4" step="0.25">
+        </div>
+    </div>
+    <div id="credits">
+        Autor: Taavi Pahk
+        <a id="git_link" href="https://github.com/taavippp/1-kodutoo" target="_blank">Github</a>
+    </div>
+</body>
+</html>
