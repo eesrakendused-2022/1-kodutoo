@@ -29,10 +29,12 @@ Pilt logost, hoveri korral näidetakse nime, clicki korral avatakse leht GitHub 
 ![lahe pilt](/pictures/sc_2.png)
 
 Pilt kellastiili muutmisest, hover toob esile:
+
 ![lahe pilt](/pictures/sc_3.png)
 
 Pilt music player'st, nupud saadavad kas eelmisele või järgmisele laulue; keskmine nupp paneb pausile;
 alumine nupp vahetab ekraanil olevate elementide "change style" ja sidebar-i taustavärvi:
+
 ![lahe pilt](/pictures/sc_4.png)
 
 
