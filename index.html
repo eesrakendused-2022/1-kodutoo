@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="http://livejs.com/live.js"></script>
+    <script src="script/clock.js" defer></script>
+    
+    <title>Kell</title>
+</head>
+<body>
+    
+
+<main class="centre-box" id="centre-box">
+    
+
+    
+        <div id="time" class="bold-font">
+            <div id="hours">Tunnid</div>
+            <div>:</div>
+            <div id="minutes">Minutid</div>
+            <div>:</div>
+            <div id="seconds">Sekundid</div>
+            
+        </div>
+
+        <div id="line">&nbsp;</div>
+        
+        <div id="innerContainer">
+            <div id="date-time" class="semi-bold-font">
+                <div id="date">kuupäev</div>
+                <div>.</div>
+                <div id="month">kuunimi</div>
+                <!-- space: &nbsp; -->
+                <div>&nbsp;</div>
+                <div id="year">aasta</div>
+            </div>
+            <div id="day" class="normal-bold-font">nädalapäev</div>
+        </div>
+
+    <div id="controlls-footer">
+        <div id="controlls">
+            <button id="bigger">+</button>
+            <button id="deafult">o</button>
+            <button id="smaller">-</button>
+            <div>&nbsp;</div>
+            <select onchange="setLang()" name="lang" id="lang">
+                <option value="0">EST</option>
+                <option value="1">ENG</option>
+                <option value="2">RUS</option>
+            </select>
+
+            <select onchange="setTheme()" name="theme" id="theme">
+                <option value="0">Dark</option>
+                <option value="1">Light</option>
+            </select>
+        </div>
+        <div id="footer">
+            Siim Kriibi &nbsp;|&nbsp; <a href="https://github.com/siim002/1-kodutoo" target="_blank">GitHub</a> &nbsp;|&nbsp;
+            TLU 2022
+        </div>
+    </div>
+        
+    
+</main>
+
+
+    
+</body>
+</html>
