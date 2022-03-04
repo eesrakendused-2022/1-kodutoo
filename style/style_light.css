@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300;400&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: beige;
+  color: white;
+}
+
+.centre-box {
+  width: 600px;
+  height: 450px;
+  background-color: black;
+  color: beige;
+  border-radius: 10px;
+  font-size: 22px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin: 2%;
+}
+
+#time {
+  display: grid;
+  grid-auto-flow: column;
+  padding: 0;
+  margin: 0;
+  width: 0;
+
+  position: relative;
+  top: 20%;
+  place-content: center;
+}
+
+#line {
+  display: flex;
+  flex-direction: row;
+  width: 62%;
+  height: 0;
+  border: 4px solid beige;
+  background: beige;
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+#innerContainer {
+  position: relative;
+  top: -10%;
+}
+
+#date-time {
+  display: flex;
+  flex-direction: row;
+}
+
+#controlls-footer {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+#footer {
+  font-family: "Smooch Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: black;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 170%;
+  bottom: 0;
+}
+
+#controlls {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: auto;
+  position: relative;
+  bottom: -70%;
+}
+
+button,
+select,
+option {
+  font-family: "Smooch Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  height: 38px;
+  margin: 0px;
+  width: fit-content;
+  height: auto;
+  background-color: black;
+  color: beige;
+  border: 0px;
+}
+
+button:hover {
+  background-color: beige;
+  color: black;
+}
+
+#footer a {
+  color: black;
+}
+
+#footer a:visited {
+  color: black;
+}
+
+#footer a:hover {
+  background-color: black;
+  color: beige;
+  text-decoration: none;
+}
+
+button {
+  font-size: 1.3em !important;
+}
+
+/* Fonts */
+.bold-font {
+  font-family: "Smooch Sans", sans-serif;
+  font-weight: 700;
+  font-size: 5em;
+}
+
+.semi-bold-font {
+  font-family: "Smooch Sans", sans-serif;
+  font-weight: 600;
+  font-size: 3em;
+}
+
+.normal-bold-font {
+  font-family: "Smooch Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2.9em;
+}
