@@ -7,11 +7,15 @@ var woofStyle = document.getElementById("styleChange4");
 var catStyle = document.getElementById("styleChange5");
 var logo = document.querySelector("#logo");
 var fullScreen = document.querySelector("#fullScreen");
-var color = document.querySelector("#colorChange");
+var colorVal = document.querySelector("#colorHolder");
 var counter = 0;
-function echoColor(){
-    console.log(color.value);
-}
+colorVal.addEventListener("input", function(){
+    document.getElementById("side").style.backgroundColor = colorVal.value;
+    document.getElementById("side").style.opacity = 0.8;
+    document.getElementById("changeClock").style.backgroundColor = colorVal.value;
+    document.getElementById("changeClock").style.opacity = 0.9;
+
+})
 
 function sendToGit(){
     window.open("https://github.com/kristoplv/1-kodutoo");

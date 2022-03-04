@@ -38,7 +38,7 @@ function tellTime(){
 
     let showTime = document.getElementById("time_here");
     let showDay = document.getElementById("date_here");
-    showDay.innerHTML = "<p1>"+day+"."+month+"."+year+"</p1>";
-    showTime.innerHTML = "<p1>"+ h+ " : "+ m+" : "+s+"  ... "+zone+"</p1>";
+    showDay.innerHTML = "<p1 id='text'>"+day+"."+month+"."+year+"</p1>";
+    showTime.innerHTML = "<p1 id='text'>"+ h+ " : "+ m+" : "+s+"  ... </p1><br><p1 id='text'>"+zone+"</p1>";
     setTimeout(tellTime, 1000);
 }

@@ -36,7 +36,8 @@
 .icons{
     background-color: rgba(99, 61, 96, 0.5);
     border-radius: 20px;
-    border: 2px solid rgba(99, 61, 96, 1);
+    border: 3px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 2px 20px rgba(99, 61, 96, 1);
     margin: 40px;
     display: flex;
     flex-wrap: wrap;

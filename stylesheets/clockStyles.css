@@ -82,6 +82,7 @@ body, html {
     transition: 300ms;
 }
 .side{
+    justify-content: center;
     position: relative;
     border: 0.1em solid rgba(0,0,0.9);
     justify-self: right;
@@ -93,6 +94,7 @@ body, html {
     background-color: rgba(0,0,0,0.8);
     border-radius: 10px;
     font-size: 100%;
+    transition: 300ms;
 }
 .greeting, .time, .date{
     text-align: center;
@@ -160,4 +162,16 @@ p1{
     transition: ease-in 300ms;
     -webkit-transition: ease-in 300ms;
     opacity: 1;
+}
+#colorHolder{
+    margin: 0;
+    margin-bottom: 5%;
+    position: relative;
+    margin-left: 45%;
+    border-radius: 20%;
+    width: 3vw;
+    height: 3vh;
+    background-color: rgb(223, 208, 208);
+    border: 0.15vw solid black;
+    box-shadow: 1px 1px 20px white;
 }
