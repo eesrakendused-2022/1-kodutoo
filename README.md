@@ -20,6 +20,10 @@ Veebirakenduse funktsioonid:
 * Leht loodi kasutades Node-i ja Vite-t, aka forki/pulli see, ava VSC-s ja kirjuta terminali "npm run dev" ja saad vaadata kuidas asi toimib.
 * Maybe more, who knows...
 
+### Pildid 
+
+Pilt üldisest screenist
+![lahe pilt](/pictures/sc_1.png)
 
 
 ## Ülesanne:
