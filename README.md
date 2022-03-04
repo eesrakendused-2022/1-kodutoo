@@ -1,6 +1,8 @@
 # Kell - 1. kodutoo
 ### Siim Kriibi
 
+http://www.tlu.ee/~siim02/
+
 Kellal on kolm funktsionaalsust:
   1. Kella suurust saab nuppu vajutusega muuta suuremaks, väiksemaks ja tagasi tavasuurusele.
   2. Kellal saab muuta keelt, see muudab kuupäeva- ja päevanimed, kas Eesti keelde, Inglise keelde või Vene keelde.
