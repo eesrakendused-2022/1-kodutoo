@@ -6,6 +6,6 @@ Tegin digitaalse kella millel on võimalik muuta kuupäeva ja kellaaja suurust. 
 
 ## Kuvatõmmis
 
-![Kuvatõmmis](C:\Users\Taavi TLU\1-kodutoo\Taavi Kamarik kodutöö\kodutoo1.png)
+![Kuvatõmmis](Taavi Kamarik kodutöö/kodutoo1.png)
 
 
