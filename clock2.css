@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    background-color: gray;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    justify-content: space-around;
+    font-size: 25px;
+    font-family: "Comic Sans MS",cursive,sans-serif;
+}
+#time{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+#date2{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    border: 3px;
+    border-width: 2px;
+    border-color: blanchedalmond;
+    color: black;
+    font-size: 14px;
+    border-radius: 60%;
+    width: fit-content;
+    height: fit-content;
+}
