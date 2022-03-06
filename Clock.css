@@ -6,7 +6,7 @@ body{
 
 #container{
     position: relative;
-    height: 400px;
+    height: 300px;
     width: auto;
 }
 
@@ -35,7 +35,6 @@ body{
 }
 
 #date{
-    margin: auto;
     text-align: center;
     width: auto;
     font-size: 4em;
@@ -49,9 +48,14 @@ body{
 }
 
 #day_status{
-    margin: auto;
     text-align: center;
     width: auto;
     font-size: 4em;
+}
+
+h3{
+    margin: 0;
+    font-size: 2em;
+    font-weight: normal;
 }
 
