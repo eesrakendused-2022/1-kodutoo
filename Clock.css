@@ -29,6 +29,7 @@ body{
     left: 25%;
     right: 25%;
     background:rgba(202, 201, 201, 0.5);
+    /*background screen*/
     border: solid;
     border-radius: 25px;
     z-index: -1;
