@@ -1,5 +1,5 @@
 # 1. Kodutöö
-
+http://www.tlu.ee/~morten1/clock/clock.html
 
 ## Funktsionaalsused
 
