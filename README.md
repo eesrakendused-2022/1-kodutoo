@@ -1,11 +1,11 @@
-# 1-kodutoo
+# 1. Kodutöö
 
 
 ## Funktsionaalsused
 
 * Võimalik vahetada kella värvi
 * Võimalik muuta taustapilti
-* Võimalik taastada lehe algse kujunduse
+* Võimalik taastada lehe algne kujundus
 * Hiirega nädalapäeva peale jõudes nädalapäeva enam ei näidata
 * Kellaaeg muutub topeltkliki peale suuremaks(juhul kui brauser on laiem > 615px). Uuesti kellal topeltklikkides taastub algne suurus.
 
