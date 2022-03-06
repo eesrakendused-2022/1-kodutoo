@@ -1,0 +1,23 @@
+{
+  "name": "1-kodutoo",
+  "version": "1.0.0",
+  "description": "Kujunda elektroonilise kella näide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või nt võimalda kella suurust kasutajal muuta.",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/retr0mouse/1-kodutoo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/retr0mouse/1-kodutoo/issues"
+  },
+  "homepage": "https://github.com/retr0mouse/1-kodutoo#readme",
+  "dependencies": {
+    "parcel": "^2.3.2"
+  }
+}
