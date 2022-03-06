@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    font-family: fantasy;
+    background-color: rgb(158, 220, 245);
+    color: rgb(133, 63, 133);
+    font-weight: bold;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-around;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+#time {
+    display: flex;
+    justify-content: center;
+    font-size: 120px;
+}
+
+#alldate{
+    display: flex;
+    flex-direction: row;
+}
+
+#author{
+    height: 0;
+}
