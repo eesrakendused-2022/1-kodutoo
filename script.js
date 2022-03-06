@@ -30,7 +30,6 @@ let numbersContainer = document.getElementById('time');
 let slider = document.getElementById('slider');
 let rgb = numbersContainer.style.backgroundColor.split(",", 3);
 
-
 updateClock();
 
 // paneme kellaaja uuendama
@@ -50,7 +49,6 @@ document.getElementById('background-2').addEventListener("click", function () { 
 document.getElementById('background-3').addEventListener("click", function () { changeBackground('3'); });
 // eventlistener numbritausta läbipaistvuseks
 slider.addEventListener('change', function () { changeOpacity(); });
-
 
 function updateClock() {
     d = new Date();
