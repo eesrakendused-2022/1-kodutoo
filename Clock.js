@@ -1,3 +1,4 @@
+/* Kellaaja funktsioon */
 function clock_time() {
     var d = new Date();
     var hours = d.getHours();
@@ -15,7 +16,7 @@ function clock_time() {
  }
 
  
-
+/* Kuupäeva funktsioon */
  function showDate(){
     var d = new Date();
     var days = ["Pühapäev","Esmaspäev","Teisipäev","Kolmapäev","Neljapäev","Reede","Laupäev"]
@@ -48,6 +49,8 @@ var r = 0, g = 0, b = 0;
 var rt = 0, gt = 0, bt = 0;
 var timeOutBg;
 var timeoutTxt;
+
+/* Tausta värvi vikerkaar */
 document.getElementById("rainbow_bg").addEventListener("click", function bg(){
     
     if (r <= 255 && g == 0 && b == 0) {
@@ -79,7 +82,7 @@ document.getElementById("rainbow_bg").addEventListener("click", function bg(){
 
 	bgPage.style.background = "rgb("+r+","+g+","+b+")";
 });
-
+/* Teksti värvi vikerkaar */
 document.getElementById("rainbow_txt").addEventListener("click", function txt(){
     
     if (rt <= 255 && gt == 0 && bt == 0) {
@@ -111,13 +114,13 @@ document.getElementById("rainbow_txt").addEventListener("click", function txt(){
 
 	cTxt.style.color = "rgb("+rt+","+gt+","+bt+")";
 });
-
+/* Värvivahetuse peataja */
 document.getElementById("stop").addEventListener("click", function(){
     clearTimeout(timeoutTxt);
     clearTimeout(timeOutBg);
     
 });
-
+/* Värvide resetimine tagasi mustaks */
 document.getElementById("reset_color").addEventListener("click", function(){
     clearTimeout(timeoutTxt);
     clearTimeout(timeOutBg);
