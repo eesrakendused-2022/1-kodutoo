@@ -1,0 +1,22 @@
+:root {
+    --back-color: #273a43;
+    --back-image: url("../images/dark.jpg");
+    --cel-body-color: #fffff0;
+    --cel-body-shadow: rgb(255 160 122 / 0.6);
+    --cel-body-glow: rgb(255 255 255 / 0.7);
+    --text-color: rgb(221, 220, 220);
+    --link-background: rgb(173, 173, 173);
+    --link-text: black;
+}
+
+.switcher__radio {
+    filter: invert(1);
+}
+
+.switcher__radio:checked {
+    filter: invert(0);
+}
+
+.switcher__status {
+    filter: invert(1);
+}
