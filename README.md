@@ -6,3 +6,6 @@ Algselt lehele minnes hakkab automaatselt mängima muusikavideo. Kahjuks küll i
 
 ## Link
 http://www.tlu.ee/~raulito/kell/clock.html
+
+## Autor
+Raul Raudsepp
