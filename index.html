@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kell</title>
+    <meta name="description" content="Roughly 155 characters">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/086422c045.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="clock" style="font-size: 50px;">
+            <div id="date">
+                <div id="day">Kuupäev</div>
+                <div id="month">Kuu</div>
+                <div id="year">Aasta</div>
+            </div>
+            <div id="time" style="background-color: rgba(255, 255, 255, 0.288);">
+                <div id="hours">Tunnid</div>
+                <div id="minutes">Minutid</div>
+                <div id="seconds">Sekundid</div>
+            </div>
+            <div id="weekday">Nädalapäev</div>
+        </div>
+        <div id="footer">
+            <p>&copy Merle Paula Videvik</p><span><a href="https://github.com/PaulaMerle/1-kodutoo" target="_blank">Link
+                    koodireposse</a></span>
+        </div>
+    </div>
+    <div id="controls">
+        <div id="number-backround-opacity">
+            <h5>Kellaaja taust</h5>
+            <input type="range" min="1" max="1000" value="288" id="slider" title="kellaaja tausta läbipaistvus">
+        </div>
+        <div id="background-toggles" title="Muuda tausta">
+            <h5>Kella taust</h5>
+            <div id="background-buttons">
+                <button id="background-1" class="background-1"></button>
+                <button id="background-2" class="background-2"></button>
+                <button id="background-3" class="background-3"></button>
+            </div>
+        </div>
+        <div id="changeSize">
+            <h5>Teksti suurus</h5>
+            <button id="bigger" title="Muuda kiri suuremaks"><i class="fa-solid fa-t"
+                    style="font-size: 50px"></i></button>
+            <button id="smaller" title="Muuda kiri väiksemaks"><i class="fa-solid fa-t"></i></button>
+        </div>
+    </div>
+</body>
+
+</html>
