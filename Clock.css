@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+    background-size: 100%;
+}
+
+
+#container{
+    position: relative;
+    height: 300px;
+    width: auto;
+}
+
+#buttons{
+    text-align: center;
+    position: absolute;
+    top: 52%;
+    left: 27%;
+    right: 27%;
+}
+
+.button{
+    border-radius: 12px;
+}
+
+#clock_container{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    right: 25%;
+    background:rgba(202, 201, 201, 0.5);
+    /*background screen*/
+    border: solid;
+    border-radius: 25px;
+    z-index: -1;
+}
+
+#date{
+    text-align: center;
+    width: auto;
+    font-size: 4em;
+}
+
+#clock_time{
+    text-align: center;
+    width: auto;
+    font-size: 8em;
+    font-weight: bold;
+}
+
+#day_status{
+    text-align: center;
+    width: auto;
+    font-size: 4em;
+}
+
+h3{
+    margin: 0;
+    font-size: 2em;
+    font-weight: normal;
+}
+
