@@ -1,0 +1,43 @@
+body{
+    margin:0;
+}
+
+#container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 50px;
+    border-style: solid;
+    border-radius: 5px;
+    font-family: fantasy;
+    color: yellow;
+}
+
+
+
+#est, #eng {
+    border-radius: 8px;
+    background-color: yellow;
+  }
+
+#time{
+    display: flex;
+    justify-content: center;
+} 
+
+#dates{
+    display: flex;
+    justify-content: center;
+}
+
+#buttons{
+    display:flex;
+
+}
+
+p, a{
+    color:Red;
+}
