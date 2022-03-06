@@ -1,5 +1,6 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,37 +12,44 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/light.css" media="(prefers-color-scheme: light)">
     <link rel="stylesheet" href="styles/dark.css" media="(prefers-color-scheme: dark)">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic">
     <title>Clock</title>
     <script type="module" src="scripts/index.js">
-        if(matchMedia("(prefers-color-scheme: dark)").media === "not all"){
+        if (matchMedia("(prefers-color-scheme: dark)").media === "not all") {
             document.documentElement.style.display = "none";
             document.head.insertAdjacentHTML("beforeend", "<link rel='stylesheet' href='styles/light.css' onload='document.documentElement.style.display=\"\"'>)"
             );
         }
     </script>
 </head>
+
 <body>
     <div class="body">
         <div class="title">
             <h1>Frontend homework</h1>
-            <h3>clock in JavaScript</h3>
+            <h3>clock in JavaScript <br> author: Daniil Šarin</h3>
         </div>
         <div class="time-container">
             <div id="clock"></div>
             <div id="calender"></div>
         </div>
-        <div class="cel-body" id="main_page">
-        </div>
+        <div class="cel-body" id="main_page"></div>
         <fieldset class="switcher">
-        <legend class="switcher__legend">Scheme</legend>
-        <input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Light">
-        <input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="System" checked>
-        <input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Dark">
-        <div class="switcher__status"></div>
+            <legend class="switcher__legend">Scheme</legend>
+            <input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light"
+                aria-label="Light">
+            <input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto"
+                aria-label="System" checked>
+            <input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark"
+                aria-label="Dark">
+            <div class="switcher__status"></div>
         </fieldset>
+        <div class="link-container"><a href="https://github.com/retr0mouse/1-kodutoo" class="repo-link">Link to my
+                GitHub repository</a></div>
         <script type="text/javascript" src="scripts/index.js"></script>
     </div>
-</div>
+    </div>
 </body>
+
 </html>

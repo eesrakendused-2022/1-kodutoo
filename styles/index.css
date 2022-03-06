@@ -33,11 +33,28 @@ html, body {
     text-align: center;
 }
 
+.repo-link {
+    font-size: 25px;
+    color: var(--link-text);
+    text-decoration: none;
+}
+
+.link-container {
+    position: absolute;
+    left: 2%;
+    bottom: 2%;
+    border-radius: 5px;
+    padding: 1%;
+    background-color: var(--link-background);
+}
+
 #clock {
     font-size: 50px;
 }
 
 .cel-body {
+    top: 40%;
+    position: absolute;
     width: 20vmin;
     height: 20vmin;
     border-radius: 50%;
