@@ -1,0 +1,24 @@
+body{
+    margin:0;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    /* justify-content: space-around; */
+    font-size: 50px;
+}
+
+
+
+#time{
+    display: flex;
+    justify-content: center;
+}
+
+#kuup{
+    display: flex;
+    justify-content: center;
+}
