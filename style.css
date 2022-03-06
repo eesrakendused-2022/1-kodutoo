@@ -1,0 +1,130 @@
+body{
+    margin:0;
+	background-color: SaddleBrown;
+	color: white;
+	font-size: 20px;
+}
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+a {
+	color: white;
+}
+
+.langButton {
+  background-color: Black;
+  border: none;
+  padding: 0.5em 1em;
+  margin-right: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+}
+
+#wrapper{
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%, -50%);
+	
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	
+	width: 50vw;
+    height: 50vh;
+   
+	background-image: url("images/Metsat66_1947.jpg");
+	background-position: center center;
+	background-size: cover;
+	
+	border: 5px solid white;
+	border-radius: 20vh;
+	
+	font-size: 10vh;
+	color: white;
+}
+
+#time {
+    display: flex;
+	flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.clockContents{
+    display: flex;
+}
+
+#fulldate {
+    display: flex;
+    justify-content: center;
+}
+
+#caption {
+    display: flex;
+    justify-content: center;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;	
+}
+
+.cornerButton{
+	position: fixed;
+	z-index: 1;
+	width: 20vh;
+    height: 20vh;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+#corner1 {
+	top: 0;
+	left:0;
+	border-radius: 0 0 20vh 0;
+	border-bottom: 5px dotted white;
+	border-right: 5px dotted white;
+	background-color: DarkOliveGreen;
+}
+
+#corner2 {
+	top: 0;
+	right:0;
+	border-radius: 0 0 0 20vh;
+	border-bottom: 5px dotted white;
+	border-left: 5px dotted white;
+	background-color: DimGrey;
+}
+
+#corner3 {
+	bottom: 0;
+	right:0;
+	border-radius: 20vh 0 0 0;
+	border-top: 5px dotted white;
+	border-left: 5px dotted white;
+	background-color: Chocolate;
+}
+
+#corner4 {
+	bottom: 0;
+	left:0;
+	border-radius: 0 20vh 0 0;
+	border-top: 5px dotted white;
+	border-right: 5px dotted white;
+	background-color: Peru;
+}
+
+#impressum {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+	top: 0;
+	z-index: 1;
+}
