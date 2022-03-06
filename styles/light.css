@@ -2,7 +2,7 @@
     --back-color: #c7cbcc;
     --back-image: url("../images/light.jpg");
     --cel-body-color: #fff566;
-    --cel-body-shadow: rgb(222 168 33 / 0.4);
+    --cel-body-shadow: rgba(222, 87, 33, 0.4);
     --cel-body-glow: rgb(70 130 180 / 0.4);
     --text-color: black;
     --link-background: rgb(90, 90, 90);

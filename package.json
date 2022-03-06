@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/retr0mouse/1-kodutoo#readme",
   "dependencies": {
+    "jquery": "^3.6.0",
     "parcel": "^2.3.2"
   }
 }

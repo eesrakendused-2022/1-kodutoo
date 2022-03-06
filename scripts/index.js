@@ -1,10 +1,40 @@
-currentTime();
-currentDate();
-
 const lightStyles = document.querySelectorAll('link[rel=stylesheet][media*=prefers-color-scheme][media*=light]');
 const darkStyles = document.querySelectorAll('link[rel=stylesheet][media*=prefers-color-scheme][media*=dark]');
 const darkSchemeMedia = matchMedia('(prefers-color-scheme: dark)');
 const switcherRadios = document.querySelectorAll('.switcher__radio');
+const formatButton = document.getElementById('format_button');
+const leftButton = document.getElementById('left_button');
+const rightButton = document.getElementById('right_button');
+
+
+let formatChange = false;
+let session = "";
+
+if (formatButton != null) {
+    formatButton.addEventListener("click", () => { formatChange = (formatChange ? false : true) });
+}
+
+$("#turn_right").on("click", function () {
+    var angle = $("#time-container").data("angle") + 180 || 180;
+    $("#time-container").css({ transform: "translate(100%)" });
+    $("#time-container").css('transition-duration','2s');
+    $("#time-container").data("angle", angle);
+});
+
+$("#turn_left").on("click", function () {
+    var angle = $("#time-container").data("angle") - 180 || 180;
+    $("#time-container").css({ transform: "translate(-100%)" });
+    $("#time-container").css('transition-duration','2s');
+    $("#time-container").data("angle", angle);
+});
+
+$("#reset").on("click", function () {
+    var angle = $("#time-container").data("angle") - 180 || 180;
+    $("#time-container").css({ transform: "translate(0)" });
+    $("#time-container").css('transition-duration','2s');
+    $("#time-container").data("angle", angle);
+});
+
 
 function currentTime() {
     let date = new Date();
@@ -12,9 +42,25 @@ function currentTime() {
     let minutes = date.getMinutes();
     let seconds = date.getSeconds();
 
+    if (formatChange) {
+        if (hours == 0) {
+            hours = 12;
+        }
+        if (hours > 12) {
+            hours -= 12;
+            session = " PM"
+        }
+        else {
+            session = " AM"
+        }
+    }
+    else {
+        session = "";
+    }
+
     hours = (hours < 10) ? "0" + hours : hours;
     minutes = (minutes < 10) ? "0" + minutes : minutes;
-    seconds = (seconds < 10) ? "0" + seconds : seconds;
+    seconds = (seconds < 10) ? "0" + seconds : seconds + session;
 
     let time = hours + ":" + minutes + ":" + seconds;
 
@@ -134,3 +180,5 @@ function clearScheme() {
 
 setupSwitcher();
 setupScheme();
+currentTime();
+currentDate();
