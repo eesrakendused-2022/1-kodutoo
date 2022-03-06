@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    background-color: darkorchid;
+    color: rgb(38, 4, 117);
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    justify-content: space-around;
+    font-size: 260%;
+}
+
+#bigger, #smaller{
+    background-color: rgb(189, 79, 174);
+    padding: .6%;
+    border-radius: 10%;
+    font-style: italic;
+    border-color: rgb(217, 71, 253);
+    font-size: 130%;
+}
+
+#time{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(218, 81, 161);
+    border-radius: 10%; 
+    opacity: 0.9;
+    padding: 3%; 
+    display: flex;
+    justify-content: space-around;
+    height: 20vh;
+    align-items: center;
+    align-self: hover;
+    font-style: oblique;
+}
+
+
+body {
+    background-image: url("clockpicture10.png");
+    background-size: cover;
+}
+
+#dayinfo{
+    width:50%;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    background-color: beige;
+    opacity: .5;
+    color: blue;
+} 
+.date,.month{
+    width:5%;
+    height: 20%; 
+    margin: 2%; 
+} 
+
+.month, .year, .day{
+    width:20%;
+    height:20%;
+    margin:2%;
+}
+
+#time:hover{
+    background-color: rgb(144, 87, 197);
+    transform: scale(1.5) rotate(0deg) translate(0px, 0px) skew(0deg);
+    color: black;
+}
+
+#authorinfo{
+    background-color: darkcyan;
+    width: 30%;
+    padding: 2%;
+    border-radius: 50%;
+    opacity: .5;
+    justify-content: right;
+}
+
+#authorinfo:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#daypicture, #nightpicture{
+    background-color: cornflowerblue;
+    border-radius: 10%;
+    border-color: cornflowerblue;
+}
+
+#bottomrow{
+    width:40%;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    margin: .5%;
+    height: 20%;
+    float: right;
+}
