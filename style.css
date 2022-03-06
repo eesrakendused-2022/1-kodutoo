@@ -1,0 +1,29 @@
+body{
+    margin:0;
+    background-color: aquamarine;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    justify-content: space-around;
+    font-size: 26px;
+    color: blue;
+}
+
+#time{
+    display: flex;
+    justify-content: center;
+}
+
+#controls{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    height: 70px;
+    width: 100px;
+}
