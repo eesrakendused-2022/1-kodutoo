@@ -19,7 +19,7 @@
                 <div id="month">Kuu</div>
                 <div id="year">Aasta</div>
             </div>
-            <div id="time">
+            <div id="time" style="background-color: rgba(255, 255, 255, 0.288);">
                 <div id="hours">Tunnid</div>
                 <div id="minutes">Minutid</div>
                 <div id="seconds">Sekundid</div>
@@ -29,21 +29,23 @@
         <p id="copyright">&copy Merle Paula Videvik</p>
     </div>
     <div id="controls">
-        <!-- Background Toggle -->
-        <h5>Muuda kella tausta</h5>
+        <div id="number-backround-opacity">
+            <h5>Numbrite taust</h5>
+            <input type="range" min="1" max="1000" value="288" id="slider">
+        </div>
         <div id="background-toggles" title="Muuda tausta">
-            <button id="background-1" class="background-1"></button>
-            <button id="background-2" class="background-2"></button>
-            <button id="background-3" class="background-3"></button>
-<!--             <button class="background-2" onclick="changeBackground('2')"></button>
-            <button class="background-3" onclick="changeBackground('3')"></button> -->
+            <h5>Kella taust</h5>
+            <div id="background-buttons">
+                <button id="background-1" class="background-1"></button>
+                <button id="background-2" class="background-2"></button>
+                <button id="background-3" class="background-3"></button>
+            </div>
         </div>
         <div id="changeSize">
-            <h5>Muuda teksti suurust</h5>
-            <button id="bigger" title="Muuda kirja suuremaks"><i class="fa-solid fa-t"
+            <h5>Teksti suurus</h5>
+            <button id="bigger" title="Muuda kiri suuremaks"><i class="fa-solid fa-t"
                     style="font-size: 50px"></i></button>
-            <button id="smaller" title="Muuda kirja väiksemaks"><i class="fa-solid fa-t"
-                    style="font-size: 30px"></i></button>
+            <button id="smaller" title="Muuda kiri väiksemaks"><i class="fa-solid fa-t"></i></button>
         </div>
     </div>
 </body>

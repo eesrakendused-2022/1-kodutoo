@@ -8,7 +8,7 @@ let month = d.getMonth();
 let time = d.getTime();
 let date = d.getDate();
 
-// find out current font size
+// fondisuurus alguses
 let clock = document.getElementById('clock');
 let fontSize = parseInt(clock.style.fontSize.slice(0, -2));
 
@@ -25,9 +25,13 @@ let dayContainer = document.getElementById('day').innerHTML = date;
 let secondsContainer = document.getElementById('seconds');
 let minutesContainer = document.getElementById('minutes');
 let hoursContainer = document.getElementById('hours');
+// muutujad numbritausta läbipaistvuse jaoks
+let numbersContainer = document.getElementById('time');
+let slider = document.getElementById('slider');
+let rgb = numbersContainer.style.backgroundColor.split(",", 3);
+
 
 updateClock();
-
 
 // paneme kellaaja uuendama
 window.setInterval(updateClock, 1000);
@@ -43,8 +47,9 @@ document.getElementById('bigger').addEventListener("click", function () {
 // eventlistenerid kella tausta muutmiseks
 document.getElementById('background-1').addEventListener("click", function () { changeBackground('1');});
 document.getElementById('background-2').addEventListener("click", function () { changeBackground('2');});
-document.getElementById('background-3').addEventListener("click", function () { changeBackground('3');});
-
+document.getElementById('background-3').addEventListener("click", function () { changeBackground('3'); });
+// eventlistener numbritausta läbipaistvuseks
+slider.addEventListener('change', function () { changeOpacity(); });
 
 
 function updateClock() {
@@ -52,19 +57,15 @@ function updateClock() {
     hours = d.getHours();
     minutes = d.getMinutes();
     seconds = d.getSeconds();
-
     if (minutes < 10) {
         minutes = "0" + minutes;
     }
-
     if (seconds < 10) {
         seconds = "0" + seconds;
     }
-
     if (hours < 10) {
         hours = "0" + hours;
     }
-
     secondsContainer.innerHTML = ":" + seconds;
     minutesContainer.innerHTML = ":" + minutes;
     hoursContainer.innerHTML = hours;
@@ -87,5 +88,12 @@ function changeBackground(number) {
         case '3':
             return (previousBackground === 'background-3' ? false : clockContainer.classList.add('background-3'));
         default: break;
-    }
+    }  
+}
+
+function changeOpacity() {
+    let sliderValue = parseInt(slider.value);
+    let opacity = (sliderValue / 1000).toString();
+    let newRgba = rgb + ", " + opacity + ")";
+    numbersContainer.style.backgroundColor = newRgba;
 }
