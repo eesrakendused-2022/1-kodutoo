@@ -1,36 +1,11 @@
-# 1-kodutoo
+## Kuvatõmmis
+![image](https://user-images.githubusercontent.com/90237383/156930871-0fa3cfc4-181f-4773-b713-63d0a621e5bb.png)
 
-## Tähtaeg 06.03.2022 23:59
+## Kirjeldus
+Algselt lehele minnes hakkab automaatselt mängima muusikavideo. Kahjuks küll ilma helita, kuna enamik veebibrauseritest ei pane muidu videot mängima. Lehe ülemistes nurkades on kaks nuppu. Nendele vajutades saab valida, kas leht on inglise või eesti keeles. Nupud on veidi läbipaistvad, kui minna hiirega nende peale kaob läbipaistvus ära, neile vajutades liiguvad nupud hetkeks allapoole. Lehe keskel on valge kast kuldse raamiga, selle sees on suurelt näidatud kellaaeg ning selle all veidi väiksemalt kuupäev. Nende all paikneb ka eelnevalt mainitud video. Minnes hiirega kella või kuupäeva peale, muutub nende värv mustaks ja nad rapuvad veidi küljelt-küljele. Keskmise kasti all on neli nuppu. "Suuremaks" nupp teeb kella suuremaks ning "Väiksemaks" nupp väiksemaks. Nende vahel on nupp "Täpsem kuupäev", millele minnes läheb nupu taust halliks ja kuupäeva kohale ilmub täpsem kuupäev koos nädalapäeva ja välja kirjutatud kuunimega. Nupule "Breigime?" klõpsates muutub kasti taustavärv valgelt suvaliseks värviks. Kerides alla lehe lõppu, on vasakul pool kaks kirja. "Vajuta suvalist nuppu!" annab lehel viibijale vihje, et klaviatuuril suvalist nuppu vajutades muutub keskmise kasti raami värv. Kõige all on näha lehe autori nime ning selle kõrval on link tema repositooriumile.
 
-Kujunda elektroonilise kella näide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või nt võimalda kella suurust kasutajal muuta.
+## Link
+http://www.tlu.ee/~raulito/kell/clock.html
 
-## Nõuded
-
-1. Veebirakendus töötab. Näitab kella, kuupäeva, nädalapäeva ja aastat.
-1. Vastavalt kasutaja tegevusele on võimalik muuta **kolme** lauakella atribuuti muuta.
-1. Kasutatud on eventListener'e ja funktsioone.
-1. Kell on originaalne ning kasutajaliides on maitsekalt kujundatud kasutades CSS-i - peab olema ise kirjutatud. 
-1. Autori ees- ja perenimi on lehel välja toodud
-1. Lehel on viide rakenduse repositooriumile
-1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
-
-## Mõned ideed võimalikeks täiendusteks (lihtsalt, et mõte hakkaks jooksma)
-
-* Vahetuda võivad taustapildid, taustal võib mängida muusika
-* Taustale klikkides muudetakse kella taustaväri
-* Kellale klõpsides muudetakse numbrite värvi või numbrite suurust;
-* Iga numbri suurust saab eraldi muuta
-* Nooleklahvidega saab kella ekraanil liigutada
-* Küsi enne kella näitamise alustamist kasutajalt tema lemmikvärv ja tee sellest lähtudes midagi
-* Muuda kella ja tausta värvi vastavalt ajale (päev/öö)
-* Kella suurus ja asukoht sõltuvad hiire asukohast ekraanil
-* Kirjatüüpi saab ka muuta, [google.com/fonts](https://www.google.com/fonts)
-* Kasutaja saab lisada või kasutajaöe näidatakse mitu kellaaega erinevatest maailma kohtadest
-* Elemendid muudavad asukohta teatud kasutaja käitumise peale.
-* Saab vahetada keelt, kellaformaati vms.
-
-## Abimaterjal
-
-* Sündmuste loetelu [HTML DOM Events](http://www.w3schools.com/jsref/dom_obj_event.asp)
-* Ajal põhinevad sündmused [JavaScript Timing Events](http://www.w3schools.com/js/js_timing.asp)
-* CSSi muutmine [HTML DOM Style Object](http://www.w3schools.com/jsref/dom_obj_style.asp)
+## Autor
+Raul Raudsepp

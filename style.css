@@ -1,0 +1,170 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: black;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    justify-content: space-around;
+    font-size: 100px;
+    font-family: 'Abril Fatface', cursive;
+    color: goldenrod;
+    background-color: white;
+    border: 50px solid goldenrod
+}
+
+#time{
+    display: flex;
+    justify-content: center;
+}
+
+#fulldate{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+#controls{
+    display: flex;
+    justify-content: center;
+}
+
+#bigger{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    border: 5px solid white;
+    background-color: black;
+    color: white;
+    border-right: 0;
+}
+
+#smaller{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    border: 5px solid white;
+    background-color: black;
+    color: white;
+    border-left: 0;
+}
+
+#hover{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+    text-align: center;
+    height: 50px;
+    width: 400px;
+    border: 5px solid white;
+    background-color: black;
+    color: white;
+}
+
+#hover:hover{
+    background-color: gray;
+}
+
+#break{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+    text-align: center;
+    height: 50px;
+    width: 400px;
+    border: 5px solid white;
+    border-top: 0;
+    background-color: black;
+    color: white;
+}
+
+#dance{
+    display: flex;
+    justify-content: center;
+}
+
+#video{
+    display: flex;
+    justify-content: center;
+}
+
+#languages{
+    display: flex;
+    justify-content: space-between;
+}
+
+#english{
+    width: 100px;
+    height: 60px;
+    border: none;
+    background-image: url("United_Kingdom.png");
+    background-size: 100px 60px;
+    opacity: 0.5;
+}
+
+#english:hover{
+    opacity: 1;
+}
+
+#english:active{
+    transform: translateY(4px);
+  }
+
+#estonian{
+    width: 100px;
+    height: 60px;
+    border: none;
+    background-image: url("Flag_of_Estonia.png");
+    background-size: 100px 60px;
+    opacity: 0.5;
+}
+
+#estonian:hover{
+    opacity: 1;
+}
+
+#estonian:active{
+  transform: translateY(4px);
+}
+
+p{
+    color: white;
+    font-size: 20px;
+}
+
+h1{
+    color: white;
+    font-size: 10px;
+}
+
+#fulldate:hover{
+    color: black;
+    animation: shake 0.8s;
+}
+
+#time:hover{
+    color: black;
+    animation: shake 0.8s;
+}
+
+@keyframes shake{
+    0%{
+        transform: translateX(0)
+    }
+    25%{
+       transform: translateX(25px);
+    }
+       
+    50%{
+       transform: translateX(-25px);
+    }
+    100%{
+       transform: translateX(0px);
+    }
+}

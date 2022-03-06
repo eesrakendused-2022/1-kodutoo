@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="clock.js" defer></script>
+    <title>Raul Raudsepp Kell</title>
+</head>
+<body>
+    <div id="languages">
+        <button id="english" onclick="english()"></button>
+        <button id="estonian" onclick="estonian()"></button>
+    </div>
+    <div id="container">
+        <div id="time">
+            <div id="hours">Tunnid</div>
+            <div id="minutes">Minutid</div>
+            <div id="seconds">Sekundid</div>
+        </div>
+        <div id="fulldate">
+            <div id="day"></div>
+            <div id="date">Kuupäev</div>
+            <div id="month">Kuunimi</div>
+            <div id="year">Aasta</div>
+        </div>
+        <div id="video">
+            <iframe width="420" height="315"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1">
+            </iframe>
+        </div>
+    </div>
+    <div id="controls">
+        <button id="bigger" onclick="bigger()">Suuremaks</button>
+        <button id="hover">Täpsem kuupäev</button>
+        <button id="smaller" onclick="smaller()">Väiksemaks</button>
+    </div>
+    <div id="dance">
+        <button id="break" onclick="changeColor()">Breigime?</button>
+    </div>
+        
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+    </style>
+    
+    <h1 id="random">Vajuta suvalist nuppu!</h1>
+    <p>Raul Raudsepp <a href="https://github.com/rauldsepp/1-kodutoo" id="link">GitHub</a></p>
+</body>
+</html>
