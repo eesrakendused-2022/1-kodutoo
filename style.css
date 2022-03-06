@@ -1,0 +1,54 @@
+#container{
+    color: #fff;
+    background: #10101E;
+    font-family: 'Concert One', cursive;
+    width: 340px;
+    padding: 15px 10px;
+    border: 3px solid #5c87ff;
+    border-radius: 6px;
+}
+
+#fullDate{
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ body{
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background: #10101E;
+     
+ }
+
+ #time{
+     display: flex;
+     flex-direction: row;
+     font-size: 60px;
+     justify-content: center;
+ }
+
+#bigger, #smaller, #english, #estonian, #dayColor, #nightColor{
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    background: #5c87ff;
+    width: 80px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#author{
+    color: #5c87ff;
+    font-size: 12px;
+}
