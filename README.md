@@ -1,9 +1,4 @@
-# 1-kodutoo
+![image](https://user-images.githubusercontent.com/90237383/156930871-0fa3cfc4-181f-4773-b713-63d0a621e5bb.png)
 
-## Tähtaeg 06.03.2022 23:59
 
-## Nõuded
-
-## Mõned ideed võimalikeks täiendusteks (lihtsalt, et mõte hakkaks jooksma)
-
-## Abimaterjal
+http://www.tlu.ee/~raulito/kell/clock.html
