@@ -1,4 +1,4 @@
-:root{
+:root {
     --back-color: #c7cbcc;
     --back-image: url("../images/light.jpg");
     --cel-body-color: #fff566;
@@ -9,14 +9,14 @@
     --link-text: white;
 }
 
-.switcher__radio{
+.switcher__radio {
     filter: invert(0);
 }
 
-.switcher__radio:checked{
+.switcher__radio:checked {
     filter: invert(1);
 }
 
-.switcher__status{
+.switcher__status {
     filter: invert(0);
 }

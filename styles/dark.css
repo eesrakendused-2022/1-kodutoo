@@ -1,4 +1,4 @@
-:root{
+:root {
     --back-color: #273a43;
     --back-image: url("../images/dark.jpg");
     --cel-body-color: #fffff0;
@@ -9,14 +9,14 @@
     --link-text: black;
 }
 
-.switcher__radio{
+.switcher__radio {
     filter: invert(1);
 }
 
-.switcher__radio:checked{
+.switcher__radio:checked {
     filter: invert(0);
 }
 
-.switcher__status{
+.switcher__status {
     filter: invert(1);
 }

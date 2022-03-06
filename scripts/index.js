@@ -17,21 +17,21 @@ if (formatButton != null) {
 $("#turn_right").on("click", function () {
     var angle = $("#time-container").data("angle") + 180 || 180;
     $("#time-container").css({ transform: "translate(100%)" });
-    $("#time-container").css('transition-duration','2s');
+    $("#time-container").css('transition-duration', '2s');
     $("#time-container").data("angle", angle);
 });
 
 $("#turn_left").on("click", function () {
     var angle = $("#time-container").data("angle") - 180 || 180;
     $("#time-container").css({ transform: "translate(-100%)" });
-    $("#time-container").css('transition-duration','2s');
+    $("#time-container").css('transition-duration', '2s');
     $("#time-container").data("angle", angle);
 });
 
 $("#reset").on("click", function () {
     var angle = $("#time-container").data("angle") - 180 || 180;
     $("#time-container").css({ transform: "translate(0)" });
-    $("#time-container").css('transition-duration','2s');
+    $("#time-container").css('transition-duration', '2s');
     $("#time-container").data("angle", angle);
 });
 
