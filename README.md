@@ -1,7 +1,8 @@
 # 1-kodutoo
 Lehekülje autor: Kevin Rosenberg
 ## Ekraanipilt
-![image](https://user-images.githubusercontent.com/90192448/156943149-24d948ac-f5bc-46ec-85cd-4295579eea5d.png)
+![image](https://user-images.githubusercontent.com/90192448/156943568-8241375f-4051-4989-ad62-39501ec4899a.png)
+![image](https://user-images.githubusercontent.com/90192448/156943613-c9a8c8a9-1b41-4653-8be9-b07d60c675dc.png)
 
 ## Funktsionaalsus
 1. Klikkides kuupäeva kasti sisse muudab lehekülg tumeda ja heleda režiimi vahel.
