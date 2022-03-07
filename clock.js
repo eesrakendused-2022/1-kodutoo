@@ -11,11 +11,10 @@ let month = d.getMonth();
 
 let fontSize = 26;
 let lang = "EST";
+let clockColor = "blue";
 
 let months = ["Jaanuar", "Veebruar", "Märts", "Aprill", "Mai", "Juuni", "Juuli", "August", "September", "Oktoober", "November", "Detsember"];
 let days = ["Pühapäev", "Esmaspäev", "Teisipäev", "Kolmapäev", "Neljapäev", "Reede", "Laupäev"];
-
-console.log("Testin console logi");
 
 let dayContainer = document.getElementById('day');
 let monthContainer = document.getElementById('month');
@@ -47,24 +46,31 @@ document.getElementById('languagechoice').addEventListener("click", function(){
         days = ["Pühapäev", "Esmaspäev", "Teisipäev", "Kolmapäev", "Neljapäev", "Reede", "Laupäev"];
     }
     document.getElementById('month').innerHTML = months[month];
-    console.log("111111");
+    document.getElementById('day').innerHTML = days[day];
 });
 
 
 document.getElementById('color').addEventListener("click", function(){
-    document.getElementById('container').style.color = "red";
+    if(clockColor == "blue"){
+        clockColor = "red";
+        document.getElementById('container').style.color = "red";
+    } else {
+        clockColor = "blue";
+        document.getElementById('container').style.color = "blue";
+    }
+    
 });
 
-document.getElementById('controls').style.backgroundColor = "red";
 
 document.getElementById('smaller').addEventListener("click", function(){
     fontSize --;
     document.getElementById('container').style.fontSize = fontSize + "px";
+    document.getElementById('time').style.fontSize = fontSize + "px";
 });
 document.getElementById('bigger').addEventListener("click", function(){
     fontSize ++;
-    console.log("222222");
     document.getElementById('container').style.fontSize = fontSize + "px";
+    document.getElementById('time').style.fontSize = fontSize + "px";
 });
 
 function updateClock(){

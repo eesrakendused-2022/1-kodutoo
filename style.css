@@ -1,6 +1,5 @@
 body{
     margin:0;
-    background-color: aquamarine;
 }
 
 #container{
@@ -16,6 +15,7 @@ body{
 #time{
     display: flex;
     justify-content: center;
+    font-size: 26px;
 }
 
 #controls{
