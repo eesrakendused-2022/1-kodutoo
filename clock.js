@@ -52,7 +52,7 @@ document.getElementById('languagechoice').addEventListener("click", function(){
 
 
 document.getElementById('color').addEventListener("click", function(){
-    document.getElementById('color').innerHTML;
+    document.getElementById('container').style.color = "red";
 });
 
 document.getElementById('controls').style.backgroundColor = "red";
