@@ -15,6 +15,7 @@ let lang = "EST";
 let months = ["Jaanuar", "Veebruar", "Märts", "Aprill", "Mai", "Juuni", "Juuli", "August", "September", "Oktoober", "November", "Detsember"];
 let days = ["Pühapäev", "Esmaspäev", "Teisipäev", "Kolmapäev", "Neljapäev", "Reede", "Laupäev"];
 
+console.log("Testin console logi");
 
 let dayContainer = document.getElementById('day');
 let monthContainer = document.getElementById('month');
@@ -46,13 +47,15 @@ document.getElementById('languagechoice').addEventListener("click", function(){
         days = ["Pühapäev", "Esmaspäev", "Teisipäev", "Kolmapäev", "Neljapäev", "Reede", "Laupäev"];
     }
     document.getElementById('month').innerHTML = months[month];
+    console.log("111111");
 });
 
 
 document.getElementById('color').addEventListener("click", function(){
-    document.getElementById('color').innerHTML
+    document.getElementById('color').innerHTML;
 });
 
+document.getElementById('controls').style.backgroundColor = "red";
 
 document.getElementById('smaller').addEventListener("click", function(){
     fontSize --;
@@ -60,6 +63,7 @@ document.getElementById('smaller').addEventListener("click", function(){
 });
 document.getElementById('bigger').addEventListener("click", function(){
     fontSize ++;
+    console.log("222222");
     document.getElementById('container').style.fontSize = fontSize + "px";
 });
 
