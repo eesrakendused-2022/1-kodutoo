@@ -1,0 +1,54 @@
+body{
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #4c82b1;
+}
+
+.nimi{
+    color: #12092c;
+    padding 100px;
+    text-align: center;
+}
+
+#container{
+    
+    color: rgb(190, 159, 17);
+    
+    
+    
+
+}
+button{
+    color: #12092c;
+    border: 5px solid black;
+    background: rgb(177, 61, 90); 
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+    margin: 30px;
+        
+}
+
+.controls{
+    
+    display: flex;
+   
+    justify-content: center;
+    
+    
+}
+
+#dateValue{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    ;
+}
+
+#time{
+    font-size: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
