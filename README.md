@@ -14,3 +14,5 @@ Täisekraan/Välju täisekraanist: Saab panna kella täisekraanile ja väljuda s
 Päevane teema/Öine teema: saab vahetada kella teemat
 
 12/24 tunni formaat: saab muuta kella formaati
+
+Kella saab lohistada (drag)
