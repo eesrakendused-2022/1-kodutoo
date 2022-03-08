@@ -1,0 +1,69 @@
+body{
+  margin: 0;
+  font-size: 2.5em;
+  background-image: url("taevas.gif");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div{
+  text-align: center;
+}
+
+#container{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-around;
+}
+
+#container div{
+  padding: 2%;
+}
+
+#time{
+  order: 1;
+  align-self: flex-start;
+  background-color: rgb(90, 88, 245);
+}
+
+#date{
+  order: 2;
+  align-self: flex-start;
+  background-color: rgb(90, 88, 245); 
+}
+
+#weekday{
+  order: 5;
+  align-self: flex-start;
+  background-color: rgb(90, 88, 245);
+}
+
+#name{
+  order: 0;
+  align-self: flex-start;
+  background-color: rgb(90, 88, 245);
+}
+
+#background{
+  order: 6;
+  align-self: flex-end;
+  background-color: rgb(255, 125, 125);
+    
+}
+
+#music{
+  order: 7;
+  align-self: flex-end;
+  background-color: rgb(255, 125, 125);
+}
+
+#repository{
+  order: 8;
+  align-self: flex-end;
+  background-color: rgb(255, 125, 125);
+}
+
