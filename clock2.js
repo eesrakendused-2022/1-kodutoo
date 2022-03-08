@@ -43,9 +43,8 @@ document.getElementById('changetheme').addEventListener("click",function(){
     document.getElementById('main').style.backgroundColor = "white";
 });
 document.getElementById('backtodefault').addEventListener("click",function(){
-    document.getElementById('time').style.fontSize=fontSize+"px";
+    document.getElementById('container').style.fontSize=fontSize+"px";
     document.getElementById('main').style.backgroundColor=default_background;
-    document.getElementById('date2').style.fontSize=25+"px";
     document.getElementById('container').style.fontFamily=default_font;
 });
 document.getElementById('changefont').addEventListener("click",function(){
