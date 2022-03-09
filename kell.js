@@ -2,13 +2,29 @@ let d = new Date()
 
 let months = ["Jaanuar", "Veebruar", "Märts", "Aprill", "Mai", "Juuni", "Juuli", "August", "September", "Oktoober", "November", "Detsember"]
 let days = ["Pühapäev", "Esmaspäev", "Teisipäev", "Kolmapäev", "Neljapäev", "Reede", "Laupäev"];
-let hourNames = ["Null", "Üks", "Kaks", "Kolm", "Neli", "Viis", "Kuus", "Seitse", "Kaheksa", "Üheksa", "Kümme", "Üksteist", "Kaksteist", "Kolmteist", "Neliteist", "Viisteist", "Kuusteist", "Seitseteist", "Kaheksateist", "Üheksateist", "Kakskümmend", "Kakskümmend üks", "Kakskümmend kaks", "Kakskümmend kolm", "Kakskümmend neli" ];
-let minuteNames = ["Null", "Üks", "Kaks", "Kolm", "Neli", "Viis", "Kuus", "Seitse", "Kaheksa", "Üheksa", "Kümme", "Üksteist", "Kaksteist", "Kolmteist", "Neliteist", "Viisteist", "Kuusteist", "Seitseteist", "Kaheksateist", "Üheksateist", "Kakskümmend", "Kakskümmend üks", "Kakskümmend kaks", "Kakskümmend kolm", "Kakskümmend neli", "Kakskümmend viis", "Kakskümmend kuus", "Kakskümmend seitse", "Kakskümmend kaheksa", "Kakskümmend üheksa", "Kolmkümmend", "Kolmkümmend üks", "Kolmkümmend kaks", "Kolmkümmend kolm", "Kolmkümmend neli", "Kolmkümmend viis", "Kolmkümmend kuus", "Kolmkümmend seitse", "Kolmkümmend üheksa", "Nelikümmend", "Nelikümmend üks", "Nelikümmend kaks", "Nelikümmend kolm", "Nelikümmend neli", "Nelikümmend viis", "Nelikümmend kuus", "Nelikümmend seitse", "Nelikümmend kaheksa", "Nelikümmend üheksa", "Viiskümmend", "Viiskümmend üks", "Viiskümmend kaks", "Viiskümmend kolm", "Viiskümmend neli", "Viiskümmend viis", "Viiskümmend kuus", "Viiskümmend seitse", "Viiskümmend kaheksa", "Viiskümmend üheksa", "Kuuskümmend"];
+let hourNames = ["Null", "Üks", "Kaks", "Kolm", "Neli", "Viis", "Kuus", "Seitse", "Kaheksa", "Üheksa", "Kümme", "Üksteist", "Kaksteist",
+		 "Kolmteist", "Neliteist", "Viisteist", "Kuusteist", "Seitseteist", "Kaheksateist", "Üheksateist", "Kakskümmend", "Kakskümmend üks",
+		 "Kakskümmend kaks", "Kakskümmend kolm", "Kakskümmend neli" ];
+let minuteNames = ["Null", "Üks", "Kaks", "Kolm", "Neli", "Viis", "Kuus", "Seitse", "Kaheksa", "Üheksa", "Kümme", "Üksteist", "Kaksteist",
+		   "Kolmteist", "Neliteist", "Viisteist", "Kuusteist", "Seitseteist", "Kaheksateist", "Üheksateist", "Kakskümmend", "Kakskümmend üks",
+		   "Kakskümmend kaks", "Kakskümmend kolm", "Kakskümmend neli", "Kakskümmend viis", "Kakskümmend kuus", "Kakskümmend seitse",
+		   "Kakskümmend kaheksa", "Kakskümmend üheksa", "Kolmkümmend", "Kolmkümmend üks", "Kolmkümmend kaks", "Kolmkümmend kolm",
+		   "Kolmkümmend neli", "Kolmkümmend viis", "Kolmkümmend kuus", "Kolmkümmend seitse", "Kolmkümmend üheksa", "Nelikümmend", 
+		   "Nelikümmend üks", "Nelikümmend kaks", "Nelikümmend kolm", "Nelikümmend neli", "Nelikümmend viis", "Nelikümmend kuus", 
+		   "Nelikümmend seitse", "Nelikümmend kaheksa", "Nelikümmend üheksa", "Viiskümmend", "Viiskümmend üks", "Viiskümmend kaks", 
+		   "Viiskümmend kolm", "Viiskümmend neli", "Viiskümmend viis", "Viiskümmend kuus", "Viiskümmend seitse", "Viiskümmend kaheksa", 
+		   "Viiskümmend üheksa", "Kuuskümmend"];
 
 let monthsEng = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 let daysEng = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-let hourNamesEng = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", " Twelve "," Thirteen "," Fourteen "," Fifteen "," Sixteen "," Seventeen "," Eighteen "," Nineteen "," Twenty "," Twenty one "," Twenty two "," Twenty three ", "Twenty four"];
-let minuteNamesEng = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", " Twelve "," Thirteen "," Fourteen "," Fifteen "," Sixteen "," Seventeen "," Eighteen "," Nineteen "," Twenty "," Twenty one "," Twenty two "," Twenty three ", "Twenty four", "Twenty five", "Twenty six", "Twenty seven", "Twenty eight", "Twenty nine", "Thirty", "Thirty one", "Thirty two", "Thirty three", " Thirty four "," Thirty five "," Thirty six "," Thirty seven "," thirty nine "," forty "," forty one "," forty two "," forty three "," forty four "," forty five", "forty-six", "forty-seven", "forty-eight", "forty-nine", "fifty", "fifty-one", "fifty-two", "fifty three", "fifty four", "fifty five "," Fifty six "," Fifty seven "," Fifty eight "," Fifty nine ", "Sixty"];
+let hourNamesEng = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", " Twelve "," Thirteen "," Fourteen ",
+		    " Fifteen "," Sixteen "," Seventeen "," Eighteen "," Nineteen "," Twenty "," Twenty one "," Twenty two "," Twenty three ", "Twenty four"];
+let minuteNamesEng = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", " Twelve "," Thirteen "," Fourteen ",
+		      " Fifteen "," Sixteen "," Seventeen "," Eighteen "," Nineteen "," Twenty "," Twenty one "," Twenty two "," Twenty three ", "Twenty four",
+		      "Twenty five", "Twenty six", "Twenty seven", "Twenty eight", "Twenty nine", "Thirty", "Thirty one", "Thirty two", "Thirty three",
+		      " Thirty four "," Thirty five "," Thirty six "," Thirty seven "," thirty nine "," forty "," forty one "," forty two "," forty three ",
+		      " forty four "," forty five", "forty-six", "forty-seven", "forty-eight", "forty-nine", "fifty", "fifty-one", "fifty-two", "fifty three", 
+		      "fifty four", "fifty five "," Fifty six "," Fifty seven "," Fifty eight "," Fifty nine ", "Sixty"];
 
 let day = d.getDay();
 let hours = d.getHours();
