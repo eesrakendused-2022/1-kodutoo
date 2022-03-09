@@ -84,6 +84,7 @@ document.getElementById('changeColor').addEventListener("click", function(){
     document.getElementById('changeType').style.background=thecolor;
 
     document.getElementById('nimi').style.color=thecolor;
+    document.getElementById('viide').style.color=thecolor;
 });
 
 
