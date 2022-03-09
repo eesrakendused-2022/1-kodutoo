@@ -9,7 +9,7 @@ div {
 }
 
 #bigger {
-    background-color:chartreuse(230, 54, 0, 0.89);
+    background-color:chartreuse;
     border: none;
     border-radius: 4px;
 }
