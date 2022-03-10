@@ -1,0 +1,23 @@
+body{
+    margin:0;
+    background-color: rgb(255, 255, 255);
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70vh;
+    justify-content: space-around;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+
+#time{
+    display: flex;
+    justify-content: center;
+}
+
+#time div{
+    padding: 0px;
+}
