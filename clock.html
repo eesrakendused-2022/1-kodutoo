@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src ="script3.js" defer></script> 
+    <link rel="stylesheet" href="style2.css">
+    <title>Kell/Clock</title>
+</head>
+
+
+
+<div id="main">
+<body onload="startTime()">
+
+  <div id="buttons">
+    <form action="kell.html">
+      <input type="submit" value="Eesti keel" />
+    </form>
+  </div>
+
+    <h2>Local time</h2>
+
+    <div id="txt"></div>
+
+    <p id="p1"></p>
+    <p id="demo"></p>
+    
+    <script>
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+      setTimeout(startTime, 1000);
+    }
+    
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};
+      return i;
+    }
+
+    var today = new Date();
+
+    let month = today.getMonth();
+    let dt = today.getDate();
+    month = checkDate(month);
+    dt = checkDate(dt);
+
+    document.getElementById("p1").innerHTML = dt+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+
+    function checkDate(j) {
+      if (j < 10) {j = "0" + j};
+      return j;
+    }
+
+    const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+const d = new Date();
+let day = weekday[d.getDay()];
+document.getElementById("demo").innerHTML = day;
+
+    </script>
+
+
+
+
+
+</div>
+<center><h2>Change background color</h2></center>
+
+<div class="buttons">
+<button class="btnBlue">Blue</button>
+<button class="btnRed">Red</button>
+<button class="btnGreen">Green</button>
+<button class="btnOrange">Orange</button>
+<button class="btnYellow">Yellow</button>
+<button class="btnPink">Pink</button>
+<button class="btnPurple">Purple</button>
+<button class="btnBrown">Brown</button>
+<button class="btnGray">Gray</button>
+</div>
+<button class="btnWhite">White</button>
+
+
+
+
+
+
+
+<script>
+    var buttons = document.querySelectorAll("button"); 
+    var body = document.querySelector("body"); 
+    
+    buttons.forEach(function(button){
+      button.addEventListener("click",function(){
+      var color = this.textContent.toLowerCase();
+      body.className= color;
+     });
+    })
+</script>
+
+<iframe width="550" height="395" src="https://www.youtube.com/embed/J13gYuiGt1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<div class="signature">
+    <p>Sten Muinast</p>
+    <a href="https://github.com/CrazyCaravanCamel/1-kodutoo">GitHub repository</a>
+</div>
+    </body>
+
+
+
+</html>
+
+<!-- kasutatud allikad:
+https://stackoverflow.com/questions/56858608/how-to-randomly-change-the-background-color-of-the-button-by-clicking-on-it
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_date_getmonth
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_date_weekday
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_date_getfullyear
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_date_weekday
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock-->
+
+
