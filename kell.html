@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src ="script3.js" defer></script> 
+    <link rel="stylesheet" href="style_eesti.css">
+    <title>Kell/Clock</title>
+</head>
+
+
+
+
+
+<div id="main">
+<body onload="startTime()">
+
+  <div id="buttons">
+    <form action="clock.html">
+      <input type="submit" value="English" />
+    </form>
+  </div>
+
+
+    <h1>Kohalik aeg</h1>
+
+    <div id="txt"></div>
+
+    <p id="p1"></p>
+    <p id="demo"></p>
+    
+    <script>
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+      setTimeout(startTime, 1000);
+    }
+    
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};
+      return i;
+    }
+
+    var today = new Date();
+
+    let month = today.getMonth();
+    let dt = today.getDate();
+    month = checkDate(month);
+    dt = checkDate(dt);
+
+    document.getElementById("p1").innerHTML = dt+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+
+    function checkDate(j) {
+      if (j < 10) {j = "0" + j};
+      return j;
+    }
+
+    const weekday = ["Pühapäev","Esmaspäev","Teisipäev","Kolmapäev","Neljapäev","Reede","Laupäev"];
+
+const d = new Date();
+let day = weekday[d.getDay()];
+document.getElementById("demo").innerHTML = day;
+
+    </script>
+
+
+
+
+
+</div>
+
+
+
+
+<center><h2>Siin saad muuta veebilehe taustavärvi</h2></center>
+
+<div class="buttons">
+<button class="btnSinine">Sinine</button>
+<button class="btnPunane">Punane</button>
+<button class="btnRoheline">Roheline</button>
+<button class="btnOranž">Oranž</button>
+<button class="btnKollane">Kollane</button>
+<button class="btnRoosa">Roosa</button>
+<button class="btnLilla">Lilla</button>
+<button class="btnPruun">Pruun</button>
+<button class="btnHall">Hall</button>
+</div>
+<button class="btnValge">Valge</button>
+
+
+<script>
+    var buttons = document.querySelectorAll("button"); 
+    var body = document.querySelector("body"); 
+    
+    buttons.forEach(function(button){
+      button.addEventListener("click",function(){
+      var color = this.textContent.toLowerCase();
+      body.className= color;
+     });
+    })
+        </script>
+
+
+  <iframe width="550" height="395" src="https://www.youtube.com/embed/J13gYuiGt1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+        
+
+<div class="signature">
+    <p>Sten Muinast</p>
+    <a href="https://github.com/CrazyCaravanCamel/1-kodutoo">GitHub repositoorium</a>
+</div>
+    </body>
+
+
+
+</html>
+
+<!-- kasutatud allikad:
+https://stackoverflow.com/questions/56858608/how-to-randomly-change-the-background-color-of-the-button-by-clicking-on-it
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_date_getmonth
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_date_weekday
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_date_getfullyear
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_date_weekday
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock-->
+
+
