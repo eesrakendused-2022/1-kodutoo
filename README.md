@@ -5,4 +5,4 @@ funktsionaalsus ning väljanägemine ei muutu. Lehel on olemas nupud taustavärv
 sisestatud video, mida saab kasutaja soovil kas mängima panna või peatada, et lehel kella vaadates liiga igav ei oleks.
 Nähtaval on ka veebilehe looja nimi ning repositooriumi link.
 
-![Alt text](/home/stemui/1-kodutoo/kellatoo.jpg?raw=true)
+![Ekraanipilt](/home/stemui/1-kodutoo/kellatoo.png?raw=true)
