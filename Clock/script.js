@@ -11,17 +11,19 @@ let months = ["Jaanuar", "Veebruar", "Märts", "Aprill", "Mai", "Juuni", "Juuli"
 let theme  = document.querySelector("#toggleBtn");
 let main = document.querySelector("#main");
 let clock = document.querySelector("#clock");
-let fontSize = 30;
+let size = (localStorage.getItem("fontSize") === 30) ? 30 : localStorage.getItem("fontSize");
 let textColor = document.querySelector("#textColor");
 let bgColor = document.querySelector("#bgColor");
 
 window.onload = ()=>{
+    size.value = localStorage.getItem("fontSize");
     theme.value = localStorage.getItem("theme");
     textColor.value = localStorage.getItem("textColor");
     bgColor.value = localStorage.getItem("bgColor");
     changeTheme();
     changeText();
     changeBg();
+    changeFont();
 };
 updateData();
 window.setInterval(updateData, 1000);
@@ -51,18 +53,21 @@ function changeTheme(){
     }
 };
 
-
+function changeFont(){
+    clock.style.fontSize = size+"px";
+    localStorage.setItem("fontSize", size)
+}
 
 document.querySelector("#biggerFont").addEventListener("click", ()=>{
-    fontSize++;
-    clock.style.fontSize = fontSize+"px";
-    localStorage.setItem("fontSize", fontSize+"px");
+    size++;
+    clock.style.fontSize = size+"px";
+    localStorage.setItem("fontSize", size);
 });
 
 document.querySelector("#smallerFont").addEventListener("click", ()=>{
-    fontSize--;
-    clock.style.fontSize = fontSize+"px";
-    localStorage.setItem("fontSize", fontSize+"px");
+    size--;
+    clock.style.fontSize = size+"px";
+    localStorage.setItem("fontSize", size);
 });
 
 function updateData() {

@@ -10,6 +10,8 @@ See projekt on loodud eesrakenduste 2022 kursuse käigus esimese kodutööna.
 4) Kella tektsi suurust on võimalik muuta.
 ### v1.1
 1) lisatud localStorage
+###
+1) LocalSorage-i parandus
 ## Kasutatud tarkvara
 * Windows 10
 * PhpStrorm 2020.3.3
