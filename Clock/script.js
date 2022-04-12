@@ -8,42 +8,61 @@ let seconds = date.getSeconds();
 let currentDate = date.getDate();
 let days = ["Pühapäev", "Esmaspäev", "Teisipäev","Kolmapäev", "Neljapäev", "Reede", "Laupäev"];
 let months = ["Jaanuar", "Veebruar", "Märts", "Aprill", "Mai", "Juuni", "Juuli", "August", "September", "Oktoober", "November", "Detsember"];
-const theme  = document.querySelector("#toggleBtn");
-const main = document.querySelector("#main");
+let theme  = document.querySelector("#toggleBtn");
+let main = document.querySelector("#main");
 let clock = document.querySelector("#clock");
-fontSize = 30;
+let fontSize = 30;
 let textColor = document.querySelector("#textColor");
 let bgColor = document.querySelector("#bgColor");
 
+window.onload = ()=>{
+    theme.value = localStorage.getItem("theme");
+    textColor.value = localStorage.getItem("textColor");
+    bgColor.value = localStorage.getItem("bgColor");
+    changeTheme();
+    changeText();
+    changeBg();
+};
 updateData();
 window.setInterval(updateData, 1000);
 
-document.querySelector("#textColor").addEventListener("input", ()=>{
+document.querySelector("#textColor").addEventListener("input", changeText);
+function changeText(){
     clock.style.color = textColor.value;
-});
+    localStorage.setItem("textColor", textColor.value);
+};
 
-document.querySelector("#bgColor").addEventListener("input", ()=>{
+document.querySelector("#bgColor").addEventListener("input", changeBg);
+function changeBg(){
     clock.style.backgroundColor = bgColor.value;
-});
+    localStorage.setItem("bgColor", bgColor.value);
 
-document.querySelector("#toggleBtn").addEventListener("click", ()=>{
-    if (theme.value === "day"){
-        theme.value = "night";
-        main.style.backgroundColor = "#303030";
-    }else if(theme.value === "night"){
-        main.style.backgroundColor = "#f7f7f7";
+};
+
+document.querySelector("#toggleBtn").addEventListener("click", changeTheme);
+function changeTheme(){
+    localStorage.setItem("theme", theme.value);
+    if (theme.value === "night"){
         theme.value = "day";
+        main.style.backgroundColor = "#303030";
+    }else if(theme.value === "day"){
+        main.style.backgroundColor = "#f7f7f7";
+        theme.value = "night";
     }
-});
+};
+
+
 
 document.querySelector("#biggerFont").addEventListener("click", ()=>{
     fontSize++;
     clock.style.fontSize = fontSize+"px";
+    localStorage.setItem("fontSize", fontSize+"px");
 });
 
 document.querySelector("#smallerFont").addEventListener("click", ()=>{
     fontSize--;
     clock.style.fontSize = fontSize+"px";
+    localStorage.setItem("fontSize", fontSize+"px");
 });
 
 function updateData() {
