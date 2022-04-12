@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="et" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Clock</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+    </style>
+</head>
+<body>
+<header id="header">
+    <p >TLU</p>
+    <p id="name">Alek-Jaan Tšern</p>
+    <div id="theme">
+        <img src="sun.svg" alt="Day theme">
+        <input type="button" value="day" id="toggleBtn">
+        <img src="moon.svg" alt="Night theme">
+    </div>
+</header>
+<main id="main">
+        <div id="controls">
+            <div><input type="color" id="bgColor"><label for="bgColor">BG color</label></div>
+            <div><input type="color" id="textColor"><label for="textColor">Text color</label></div>
+            <input type="button" value="Font size+" id="biggerFont">
+            <input type="button" value="Font size-" id="smallerFont">
+        </div>
+        <div id="clock">
+            <div id="time">
+                <div id="hours">tunnid</div>
+                <div id="minutes">minutit</div>
+                <div id="seconds">sekundit</div>
+            </div>
+            <div id="fullDate">
+                <div id="weekDay">nädalapäev</div>
+                <div id="day">kuupäev</div>
+                <div id="month">kuu</div>
+                <div id="year">aasta</div>
+            </div>
+        </div>
+</main>
+<footer id="footer">
+    <a href="https://github.com/Winlanto/JS" target="_blank">Github Repositoorium</a>
+    <a href="https://github.com/Winlanto/1-kodutoo" target="_blank">Kodutöö Repositoorium</a>
+</footer>
+</body>
+</html>
