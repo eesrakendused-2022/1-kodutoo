@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A simple HTML5 Clock page.">
+<meta name="author" content="NK">
+<script src="https://cdn.tailwindcss.com"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Clock</title>
+</head>
+<div id="body" class="bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900 h-screen">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Orbitron');
+        @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display');
+
+        * {
+            font-family: 'Orbitron';
+        }
+
+        .glow {
+            text-align: center;
+            -webkit-animation: glow 1s ease-in-out infinite alternate;
+            -moz-animation: glow 1s ease-in-out infinite alternate;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+            }
+        }
+
+
+    </style>
+
+    <div class="flex justify-center items-center text-7xl text-blue-100 pt-10 pb-10" id="clock"
+         onclick="currentTime()"></div>
+
+    <div class="flex justify-center items-center">
+
+        <button id="backlight"
+                class="px-4 py-2 mx-2 font-medium tracking-wide text-orange-100 capitalize transition-colors duration-200 transform bg-orange-600 rounded-md hover:bg-orange-500 focus:outline-none focus:ring focus:ring-orange-300 focus:ring-opacity-80">
+            Backlight
+        </button>
+
+        <button id="background"
+                class="px-4 py-2 mx-2 font-medium tracking-wide text-purple-100 capitalize transition-colors duration-200 transform bg-purple-600 rounded-md hover:bg-purple-500 focus:outline-none focus:ring focus:ring-purple-300 focus:ring-opacity-80">
+            Change Background
+        </button>
+
+        <button id="changeFont"
+                class="px-4 py-2 mx-2 font-medium tracking-wide text-emerald-100 capitalize transition-colors duration-200 transform bg-emerald-600 rounded-md hover:bg-emerald-500 focus:outline-none focus:ring focus:ring-emerald-300 focus:ring-opacity-80">
+            Change Font
+        </button>
+
+    </div>
+
+    <div class="flex justify-center items-center text-3xl text-blue-100 pt-10 pb-10">Nikita Kajalin</div>
+
+    <script type="text/javascript">
+
+        var backgroundState = true
+        var backgroundBtn = document.getElementById("background");
+        backgroundBtn.addEventListener("click", ChangeBackground);
+
+        function ChangeBackground() {
+            if (backgroundState == false) {
+                document.getElementById("body").className = "bg-gradient-to-r from-green-300 via-yellow-300 to-pink-300 h-screen";
+                document.getElementById("clock").className = "flex justify-center items-center text-7xl text-purple-700 pt-10 pb-10";
+
+                backgroundState = true
+            } else {
+                document.getElementById("body").className = "bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900 h-screen";
+                document.getElementById("clock").className = "flex justify-center items-center text-7xl text-blue-100 pt-10 pb-10";
+                backgroundState = false
+                backgroundBtn.removeEventListener("click", ChangeBackground)
+            }
+            backgroundBtn.addEventListener("click", ChangeBackground);
+        }
+
+
+        var fontState = true
+        var changeFontBtn = document.getElementById("changeFont");
+        changeFontBtn.addEventListener("click", changeFont);
+
+        function changeFont() {
+            if (fontState == false) {
+                document.getElementById("clock").style.fontFamily = "Shadows Into Light";
+
+                fontState = true
+            } else {
+                document.getElementById("clock").style.fontFamily = "Orbitron";
+                fontState = false
+                backgroundBtn.removeEventListener("click", changeFont)
+            }
+            backgroundBtn.addEventListener("click", changeFont);
+        }
+
+
+        var backlightState = false
+        var backlightBtn = document.getElementById("backlight");
+        backlightBtn.addEventListener("click", changeBacklight);
+
+        function changeBacklight() {
+            if (backlightState == false) {
+                document.getElementById("clock").className = "flex justify-center items-center text-7xl text-blue-100 pt-10 pb-10 glow";
+                backlightState = true
+            } else {
+                document.getElementById("clock").className = "flex justify-center items-center text-7xl text-blue-100 pt-10 pb-10";
+                backlightState = false
+                backlightBtn.removeEventListener("click", changeBacklight)
+            }
+            backlightBtn.addEventListener("click", changeBacklight);
+        }
+
+        function currentTime() {
+            var date = new Date(); /* creating object of Date class */
+            var hour = date.getHours();
+            var min = date.getMinutes();
+            var sec = date.getSeconds();
+            hour = updateTime(hour);
+            min = updateTime(min);
+            sec = updateTime(sec);
+            var y = date.getFullYear();
+            var d = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+            var n = weekday[d.getDay()];
+            document.getElementById("clock").innerText = hour + " : " + min + " : " + sec + " , " + n + " , " + y; /* adding time to the div */
+            var t = setTimeout(function () {
+                currentTime()
+            }, 1000); /* setting timer */
+        }
+
+        function updateTime(k) {
+            if (k < 10) {
+                return "0" + k;
+            } else {
+                return k;
+            }
+        }
+
+        currentTime();
+    </script>
+</div>
+</html>
