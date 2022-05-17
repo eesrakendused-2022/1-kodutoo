@@ -1,0 +1,96 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(91, 216, 147);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+#clock{
+    width: 530px;
+    height: 160px;
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+    color: rgb(19, 11, 11);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+    100%{
+      filter: hue-rotate(360deg);
+    }
+}  
+
+#time{
+    font-size: 5em;
+}
+
+#date, #clock p{
+    font-size: 1.5em;
+}
+#container{
+    
+    flex-direction: row;
+    width: 20vw;
+    justify-content: space-around;
+  }
+
+#container div{
+    padding: 2%;
+  }
+
+#container button{
+    height: 30px;
+    font-size: 17px;
+
+}
+
+#changeBackground{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -104.5px;
+    align-self: flex-end;
+    background-color: rgb(125, 240, 255);
+}
+
+#changefont{
+    position: absolute;
+    bottom: 10px;
+    left: 55%;
+    margin-left: -104.5px;
+    align-self: flex-end;
+    background-color: rgb(125, 225, 255);
+  }
+
+#smaller{
+    position: absolute;
+    bottom: 10px;
+    left: 60%;
+    margin-left: -104.5px;
+    align-self: flex-end;
+    background-color: rgb(125, 229, 255);
+  }
+#bigger{
+    position: absolute;
+    bottom: 10px;
+    left: 65%;
+    margin-left: -104.5px;
+    align-self: flex-end;
+    background-color: rgb(125, 255, 248);
+  }
