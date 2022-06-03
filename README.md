@@ -9,6 +9,9 @@
   2) Kella teksti stiili valimine
   3) Kella tausta värvi muutmine mingiks suvaliseks värviks (klikkides tausta)
 
+  Demo:
+  http://144.21.35.44/1kodutoo/clock.html
+
 ## Nõuded
 
 1. Veebirakendus töötab. Näitab kella, kuupäeva, nädalapäeva ja aastat.
