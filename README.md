@@ -2,6 +2,7 @@
 
 ## Info
   Autor: Vladislav Priske
+  
   ![image](https://user-images.githubusercontent.com/55079623/171958677-82af4e7f-1da4-44cb-a870-a7257f463776.png)
   
   Funktsionaalsus:
