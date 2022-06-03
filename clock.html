@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <div class="controls">
+        <div id="clockColor">
+            <label for="colorPicker">Vali teksti värvi:</label>
+            <input type="color" id="colorPicker" value="#000000">
+        </div>
+        <div id="clockFont">
+            <label for="fontSelector">Vali teksti stiili:</label>
+            <select name="fontSelector" id="fontSelector">
+                <option value="Fantasy">Fantasy</option>
+                <option value="Serif">Serif</option>
+                <option value="Sans-serif">Sans-serif</option>
+                <option value="Cursive">Cursive</option>
+            </select>
+        </div>
+    </div>
+    <div class="main">
+        <button id="backgroundColor"></button>
+        <div id="container">
+            <div id="fulldate"></div>
+        </div>
+        <div id="container">
+            <div id="time">
+                <div id="fulltime"></div>
+            </div>
+        </div>
+        <div id="container">
+            <div id="day"></div>
+        </div>
+    </div>
+    <div class="info">
+        <div id="autor">
+            <p>Vladislav Priske</p>
+        </div>
+        <div id="repo">
+            <a href="https://github.com/wemitwqw/1-kodutoo">Repo link</a>
+        </div>
+    </div>
+</body>
+</html>
