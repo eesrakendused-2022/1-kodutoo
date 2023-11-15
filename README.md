@@ -1,5 +1,6 @@
 # js-clock
 Website author: Kevin Rosenberg
+Small project made as part of a school subject in 2022.
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/90192448/156943568-8241375f-4051-4989-ad62-39501ec4899a.png)
 ![image](https://user-images.githubusercontent.com/90192448/156943613-c9a8c8a9-1b41-4653-8be9-b07d60c675dc.png)
