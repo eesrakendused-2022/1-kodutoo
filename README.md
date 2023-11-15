@@ -1,11 +1,11 @@
-# 1-kodutoo
-Lehekülje autor: Kevin Rosenberg
-## Ekraanipilt
+# js-clock
+Website author: Kevin Rosenberg
+## Screenshots
 ![image](https://user-images.githubusercontent.com/90192448/156943568-8241375f-4051-4989-ad62-39501ec4899a.png)
 ![image](https://user-images.githubusercontent.com/90192448/156943613-c9a8c8a9-1b41-4653-8be9-b07d60c675dc.png)
 
-## Funktsionaalsus
-1. Klikkides kuupäeva kasti sisse muudab lehekülg tumeda ja heleda režiimi vahel.
-1. Klikkides kuu kasti peale muutub kella stiil tähtedega kirjutatud ja numbritega esitatud kellaaja vahel.
-1. Klikkides nädalapäeva kastile muutub lehekülje keel inglise ja eesti keele vahel. Vahetusse kuulub kuu, nädalapäev, tähtedega kirjutatud kellaaeg ja lehekülje "title" element.
-1. Akna suurust muutes püsib kellaaja kast (ring) ühe suurusena, aga ülemised elemendid muudavad suurust.
+## Functions
+1. Clicking inside the date box the website will change between light and dark mode.
+1. Clicking on the month box the appearance of time will switch between text based and number based clock.
+1. Clicking on the weekday box the website will switch between English and Estonian. That includes month, weekday, text based clock, and the title element.
+1. Resizing the page will keep the circle the same size with the upper boxes changing their size.
